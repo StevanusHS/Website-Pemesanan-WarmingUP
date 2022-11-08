@@ -6,7 +6,16 @@ module.exports = {
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'banner-judul': "URL('/public/img/banner.jpg')",
+                'profile': "URL('/public/img/profile.jpg')",
+                'kategori': "URL('/public/img/kategori.jpg)",
+            },
+            colors : {
+                'footer' : '#232C33',
+            }
+        },
     },
     plugins: [],
 };
