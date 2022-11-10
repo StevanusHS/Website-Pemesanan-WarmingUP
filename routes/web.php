@@ -68,3 +68,7 @@ Route::get('/kopi', function () {
 Route::get('/riwayat', function () {
     return view('riwayat');
 });
+// route ke promo
+Route::get('/promo', function () {
+    return view('promo');
+});

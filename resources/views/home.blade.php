@@ -90,18 +90,18 @@
                 <div class="relative">
                     <ul id="slider">
                         <li class="h-[50vh] relative">
-                            <img class="h-full object-cover w-full" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                            <img class="h-full object-cover w-full" src={{ URL::asset('/img/bannerhome.jpeg') }} alt="banner">
                             <div class="absolute top-0 left-0 h-full  w-full flex">
                             </div>
                         </li>
-                        <li class="h-[50vh] relative hidden">
-                            <img class="h-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                        <li class="h-[50vh] relative hidden ">
+                            <img class="h-full object-cover" src={{ URL::asset('/img/bannerhome.jpeg') }} alt="banner">
                             <div class="absolute top-0 left-0 h-full bg-red-400 w-full flex">
                                 <h2 class="text-4xl font-semibold text-white my-auto w-full text-center px-20 ">banner menu 2</h2>
                             </div>
                         </li>
                         <li class="h-[50vh] relative hidden">
-                            <img class="h-full object-cover" src="" alt="">
+                            <img class="h-full object-cover" src={{ URL::asset('/img/bannerhome.jpeg') }} alt="banner">
                             <div class="absolute top-0 left-0 h-full bg-red-400 w-full flex">
                                 <h2 class="text-4xl font-semibold text-white my-auto w-full text-center px-20 ">banner menu 3</h2>
                             </div>
@@ -136,7 +136,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/indomieTektek.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
                                         <div class="w-1/2 h-auto bg-red-500 absolute mx-2 my-2 top-0 left-0 rounded-full">
                                             <p class="font-semibold text-white p-1 items-center text-center">20% off</p>
                                         </div>
@@ -148,7 +148,7 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Mie Tektek</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <p class="font-semibold px-3 text-sm line-through">Rp16.000</p>
@@ -163,7 +163,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
                                         <div class="w-1/2 h-auto bg-red-500 absolute mx-2 my-2 top-0 left-0 rounded-full">
                                             <p class="font-semibold text-white p-1 items-center text-center">20% off</p>
                                         </div>
@@ -175,11 +175,11 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Nasi goreng telor</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm line-through">Rp16.000</p>
-                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                            <p class="font-semibold px-3 text-sm line-through">Rp17.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp14.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -190,7 +190,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/kebab.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
                                         <div class="w-1/2 h-auto bg-red-500 absolute mx-2 my-2 top-0 left-0 rounded-full">
                                             <p class="font-semibold text-white p-1 items-center text-center">20% off</p>
                                         </div>
@@ -202,11 +202,11 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">kebab</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm line-through">Rp16.000</p>
-                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                            <p class="font-semibold px-3 text-sm line-through">Rp10.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp8.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -217,7 +217,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bentokarage.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
                                         <div class="w-1/2 h-auto bg-red-500 absolute mx-2 my-2 top-0 left-0 rounded-full">
                                             <p class="font-semibold text-white p-1 items-center text-center">20% off</p>
                                         </div>
@@ -229,11 +229,11 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 3</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm line-through">Rp16.000</p>
-                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                            <p class="font-semibold px-3 text-sm line-through">Rp17.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp14.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -257,7 +257,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/katsu.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -266,10 +266,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Nasi katsu</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp20.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -280,7 +280,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/matcha.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -289,10 +289,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Es matcha</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -303,7 +303,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/mojito.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -312,10 +312,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">mojito</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -326,7 +326,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/opor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -335,10 +335,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Opor ayam</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp15.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">

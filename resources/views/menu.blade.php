@@ -72,7 +72,7 @@
                     <div class="flex mx-5">
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="warmindo">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow bg-cover" src={{ URL::asset('/img/banner.jpg') }} alt="kateogri">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/warmindoLogo.jpg') }} alt="kateogri warmindo">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Warmindo</p>
                                 </div>
@@ -80,7 +80,7 @@
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="bento">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow bg-cover" src={{ URL::asset('/img/banner.jpg') }} alt="kateogri">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/bentoLog.jpg') }} alt="kateogri bento">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Bento</p>
                                 </div>
@@ -88,7 +88,7 @@
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="nasgor">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow bg-cover" src={{ URL::asset('/img/banner.jpg') }} alt="kateogri">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/nasgorLogo.png') }} alt="kateogri">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Nasgor</p>
                                 </div>
@@ -96,7 +96,7 @@
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="camilan">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow bg-cover" src={{ URL::asset('/img/banner.jpg') }} alt="kateogri">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/camilanLogo.png') }} alt="kateogri">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Camilan</p>
                                 </div>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="minuman">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow bg-cover" src={{ URL::asset('/img/banner.jpg') }} alt="kateogri">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/minumanLogo.jpg') }} alt="kateogri">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Minuman</p>
                                 </div>
@@ -112,7 +112,7 @@
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="kopi">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow bg-cover" src={{ URL::asset('/img/banner.jpg') }} alt="kateogri">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/kopiLogo.png') }} alt="kateogri">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Kopi</p>
                                 </div>
