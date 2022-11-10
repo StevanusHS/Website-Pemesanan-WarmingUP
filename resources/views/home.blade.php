@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<script>
+    currentSlide = 1;
+
+    sliderElement = document.getElementById('slider');
+    totalSlide = sliderElement.childElementCount;
+    console.log(totalSlide);
+
+    function next() {
+        if (totalSlide < currentSlide) {
+            currentSlide++;
+            showSlide()
+        }
+    }
+
+    function prev() {
+        if (currentSlide > 2) {
+            currentSlide--;
+            showSlide();
+        }
+    }
+
+    function showSlide() {
+        slide = document.getElementById('slider').getElementsByTagName('li')
+        for (let index = 0; index < totalSlide; index++) {
+            const element = slide[index];
+            if (currentSlide === index + 1) {
+                element.classList.remove('hidden')
+            } {
+                element.classList.add('hidden')
+            }
+        }
+    }
+</script>
+
 <body>
     <!-- navbar start -->
     <header class="bg-white shadow-lg fixed top-0 left-0 w-full flex items-center z-10 hover:bg-white">
@@ -54,15 +88,14 @@
         <section>
             <article>
                 <div class="relative">
-                    <ul>
+                    <ul id="slider">
                         <li class="h-[50vh] relative">
-                            <img class="h-full object-cover" src="" alt="">
-                            <div class="absolute top-0 left-0 h-full bg-red-400 w-full flex">
-                                <h2 class="text-4xl font-semibold text-white my-auto w-full text-center px-20 ">banner menu 1</h2>
+                            <img class="h-full object-cover w-full" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                            <div class="absolute top-0 left-0 h-full  w-full flex">
                             </div>
                         </li>
                         <li class="h-[50vh] relative hidden">
-                            <img class="h-full object-cover" src="" alt="">
+                            <img class="h-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
                             <div class="absolute top-0 left-0 h-full bg-red-400 w-full flex">
                                 <h2 class="text-4xl font-semibold text-white my-auto w-full text-center px-20 ">banner menu 2</h2>
                             </div>
@@ -76,10 +109,10 @@
                     </ul>
                     <div class="absolute flex top-0 left-0 h-full w-full">
                         <div class="my-auto px-5 w-full flex justify-between">
-                            <button class="bg-slate-300 p-3 rounded-full bg-opacity-50 shadow-lg">
+                            <button onclick="prev()" class="bg-slate-300 p-3 rounded-full bg-opacity-50 shadow-lg">
                                 <i class="fa-solid fa-arrow-left"></i>
                             </button>
-                            <button class="bg-slate-300 p-3 rounded-full bg-opacity-50 shadow-lg">
+                            <button onclick="next()" class="bg-slate-300 p-3 rounded-full bg-opacity-50 shadow-lg">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </div>
@@ -89,156 +122,233 @@
             <!-- end judul -->
         </section>
         <!-- end konten gambar -->
-        <section class="container max-w-full flex justify-center h-auto mx-auto bg-white ">
-            <!-- promo makanan -->
-            <div class="container bg-white h-auto">
-                <!-- card -->
-                <p class="text-gray-900 text-2xl my-5 font-semibold">Promo Makanan</p>
-                <div class="grid grid-cols-4 gap-5 ">
-                    <div class="max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg bg-banner-judul h-40" src="public/assets/img/bakso.jpeg" alt="card">
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="flex ">
-                                <h5 class="w-full mb-1 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">Nasi bakar</h5>
-                                <div class="mx-auto my-2"><i class="fa-regular fa-heart"></i></div>
-                            </a>
-                            <p class="mb-10 font-semibold text-gray-700 dark:text-gray-400">Rp 30.000</p>
-                            <div class="flex justify-end items-end">
-                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Tambah
-                                </a>
+        <section>
+            <!-- card promo makanan-->
+            <article>
+                <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
+                    <div class="container flex justify-between">
+                        <p class="font-semibold text-2xl mx-10 mb-3">Kategori menu</p>
+                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-9 mb-2">Lihat semua</button>
+                    </div>
+                    <!-- card makanan -->
+                    <div class="flex justify-center">
+                        <div class="grid grid-cols-4 gap-5">
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="w-1/2 h-auto bg-red-500 absolute mx-2 my-2 top-0 left-0 rounded-full">
+                                            <p class="font-semibold text-white p-1 items-center text-center">20% off</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm line-through">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="w-1/2 h-auto bg-red-500 absolute mx-2 my-2 top-0 left-0 rounded-full">
+                                            <p class="font-semibold text-white p-1 items-center text-center">20% off</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm line-through">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="w-1/2 h-auto bg-red-500 absolute mx-2 my-2 top-0 left-0 rounded-full">
+                                            <p class="font-semibold text-white p-1 items-center text-center">20% off</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm line-through">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="w-1/2 h-auto bg-red-500 absolute mx-2 my-2 top-0 left-0 rounded-full">
+                                            <p class="font-semibold text-white p-1 items-center text-center">20% off</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm line-through">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="max-w-xs  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg bg-banner-judul h-40" src="../../public/img/banner.jpg" alt="card">
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="flex ">
-                                <h5 class="w-full mb-1 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">Nasi bakar</h5>
-                                <div class="mx-auto my-2"><i class="fa-regular fa-heart"></i></div>
-                            </a>
-                            <p class="mb-10 font-semibold text-gray-700 dark:text-gray-400">Rp 30.000</p>
-                            <div class="flex justify-end items-end">
-                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Tambah
-                                </a>
+            </article>
+            <!-- rekomendasi menu -->
+            <article>
+                <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
+                    <div class="container flex justify-between">
+                        <p class="font-semibold text-2xl mx-10 mb-3">Rekomendasi</p>
+                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-9 mb-2">Lihat semua</button>
+                    </div>
+                    <!-- card makanan -->
+                    <div class="flex justify-center">
+                        <div class="grid grid-cols-4 gap-5">
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="max-w-sm  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg bg-banner-judul h-40" src="../../public/img/banner.jpg" alt="card">
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="flex ">
-                                <h5 class="w-full mb-1 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">Nasi bakar</h5>
-                                <div class="mx-auto my-2"><i class="fa-regular fa-heart"></i></div>
-                            </a>
-                            <p class="mb-10 font-semibold text-gray-700 dark:text-gray-400">Rp 30.000</p>
-                            <div class="flex justify-end items-end">
-                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Tambah
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="max-w-sm   bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg bg-banner-judul h-40" src="../../public/img/banner.jpg" alt="card">
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="flex ">
-                                <h5 class="w-full mb-1 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">Nasi bakar</h5>
-                                <div class="mx-auto my-2"><i class="fa-regular fa-heart"></i></div>
-                            </a>
-                            <p class="mb-10 font-semibold text-gray-700 dark:text-gray-400">Rp 30.000</p>
-                            <div class="flex justify-end items-end">
-                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Tambah
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--rekomendasi menu-->
-                <p class="text-gray-900 text-2xl my-5 font-semibold">Rekomendasi Menu</p>
-                <div class="grid grid-cols-4 gap-5 ">
-                    <div class="max-w-lg bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg bg-banner-judul h-40" src="../../public/img/banner.jpg" alt="card">
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="flex ">
-                                <h5 class="w-full mb-1 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">Nasi bakar</h5>
-                                <div class="mx-auto my-2"><i class="fa-regular fa-heart"></i></div>
-                            </a>
-                            <p class="mb-10 font-semibold text-gray-700 dark:text-gray-400">Rp 30.000</p>
-                            <div class="flex justify-end items-end">
-                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Tambah
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="max-w-lg  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg bg-banner-judul h-40" src="../../public/img/banner.jpg" alt="card">
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="flex ">
-                                <h5 class="w-full mb-1 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">Nasi bakar</h5>
-                                <div class="mx-auto my-2"><i class="fa-regular fa-heart"></i></div>
-                            </a>
-                            <p class="mb-10 font-semibold text-gray-700 dark:text-gray-400">Rp 30.000</p>
-                            <div class="flex justify-end items-end">
-                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Tambah
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="max-w-sm  bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg bg-banner-judul h-40" src="../../public/img/banner.jpg" alt="card">
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="flex ">
-                                <h5 class="w-full mb-1 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">Nasi bakar</h5>
-                                <div class="mx-auto my-2"><i class="fa-regular fa-heart"></i></div>
-                            </a>
-                            <p class="mb-10 font-semibold text-gray-700 dark:text-gray-400">Rp 30.000</p>
-                            <div class="flex justify-end items-end">
-                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Tambah
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="max-w-sm   bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg bg-banner-judul h-40" src="../../public/img/banner.jpg" alt="card">
-                        </a>
-                        <div class="p-5">
-                            <a href="#" class="flex ">
-                                <h5 class="w-full mb-1 text-2xl font-normal tracking-tight text-gray-900 dark:text-white">Nasi bakar</h5>
-                                <div class="mx-auto my-2"><i class="fa-regular fa-heart"></i></div>
-                            </a>
-                            <p class="mb-10 font-semibold text-gray-700 dark:text-gray-400">Rp 30.000</p>
-                            <div class="flex justify-end items-end">
-                                <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Tambah
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+            </article>
         </section>
     </main>
 

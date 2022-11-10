@@ -14,6 +14,15 @@ module.exports = {
             },
             colors : {
                 'footer' : '#232C33',
+                'button' : '#4B5DFF',
+            },
+            spacing : {
+                '200' : '12rem',
+                'kategori' : '7.8rem',
+                '300' : '18.75rem',
+            },
+            fontSize : {
+                '20' : '1.25rem',
             }
         },
     },

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('home');
 });
 
 
@@ -62,4 +62,9 @@ Route::get('/minuman', function () {
 // route ke kopi
 Route::get('/kopi', function () {
     return view('kopi');
+});
+
+// route ke riwayat
+Route::get('/riwayat', function () {
+    return view('riwayat');
 });
