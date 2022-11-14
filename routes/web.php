@@ -91,3 +91,8 @@ Route::get('/transaksi', function () {
 Route::get('/invoice', function () {
     return view('invoice');
 });
+
+// route kepage favorite
+Route::get('/favorite', function () {
+    return view('favorite');
+});

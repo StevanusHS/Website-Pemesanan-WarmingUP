@@ -122,6 +122,13 @@
                     </div>
                 </div>
             </article>
+            <article>
+                <div class="w-full flex justify-center">
+                    <a href="#" class="bg-biru-kode rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-800">
+                        <button type="submit" class="p-3 text-xl text-white">Cetak bukti bayar</button>
+                    </a>
+                </div>
+            </article>
         </section>
     </main>
 
