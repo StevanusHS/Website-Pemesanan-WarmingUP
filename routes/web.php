@@ -64,9 +64,9 @@ Route::get('/kopi', function () {
     return view('kopi');
 });
 
-// route ke riwayat
-Route::get('/riwayat', function () {
-    return view('riwayat');
+// route ke daftar transaksi
+Route::get('/daftarTransaksi', function () {
+    return view('daftarTransaksi');
 });
 // route ke promo
 Route::get('/promo', function () {
