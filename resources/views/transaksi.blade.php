@@ -54,58 +54,50 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-300 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
-                        <p class="my-auto text-5xl font-semibold text-white pt-11">Riwayat</p>
+                        <p class="my-auto text-5xl font-semibold text-white pt-11">Detail</p>
                     </div>
                 </div>
             </article>
             <!-- end judul -->
         </section>
-        <section>
+        <section class="max-w-6xl mx-auto h-auto border-2 bg-slate-200">
+            <!-- pesan antar -->
             <article>
-                <!-- card riwayat -->
-                <div class="w-full bg-white">
-                    <div class="max-w-full flex justify-center py-9">
-                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Riwayat</button>
-                        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Proses</button>
+                <!-- logo image -->
+                <div class="w-full flex h-auto p-5 bg-white border-b-2 border-gray-700">
+                    <a href="#"><img src={{ URL::asset('/img/banner.jpg') }} alt="pesan-antar" class="max-w-sm h-16 w-16 rounded-full object-cover"></a>
+                    <div class="my-auto">
+                        <p class="text-xl font-semibold mx-3 w-full">Pesan antar</p>
                     </div>
-                    <div class="flex justify-center">
-                        <div class="grid grid-cols-2 gap-5">
-                            <a href="#" class="flex items-center bg-white rounded-lg shadow-md max-w-sm h-auto">
-                                <img src={{ URL::asset('/img/banner.jpg') }} alt="card-image" class="bg-cover w-full h-32 p-3 rounded-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg">
-                                <div class="flex flex-col justify-between p-4 ">
-                                    <h5 class="font-semibold text-xl">Nasi Goreng</h5>
-                                    <p class="font-light">Makanan sudah diantar</p>
-                                    <p class="font-medium text-sm pt-3">8 Agustus 2022</p>
-                                </div>
-                            </a>
-                            <a href="#" class="flex items-center bg-white rounded-lg shadow-md max-w-sm h-auto">
-                                <img src={{ URL::asset('/img/banner.jpg') }} alt="card-image" class="bg-cover w-full h-32 p-3 rounded-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg">
-                                <div class="flex flex-col justify-between p-4 ">
-                                    <h5 class="font-semibold text-xl">Nasi Goreng</h5>
-                                    <p class="font-light">Makanan sudah diantar</p>
-                                    <p class="font-medium text-sm pt-3">8 Agustus 2022</p>
-                                </div>
-                            </a>
-                            <a href="#" class="flex items-center bg-white rounded-lg shadow-md max-w-sm h-auto">
-                                <img src={{ URL::asset('/img/banner.jpg') }} alt="card-image" class="bg-cover w-full h-32 p-3 rounded-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg">
-                                <div class="flex flex-col justify-between p-4 ">
-                                    <h5 class="font-semibold text-xl">Nasi Goreng</h5>
-                                    <p class="font-light">Makanan sudah diantar</p>
-                                    <p class="font-medium text-sm pt-3">8 Agustus 2022</p>
-                                </div>
-                            </a>
-                            <a href="#" class="flex items-center bg-white rounded-lg shadow-md max-w-sm h-auto">
-                                <img src={{ URL::asset('/img/banner.jpg') }} alt="card-image" class="bg-cover w-full h-32 p-3 rounded-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg">
-                                <div class="flex flex-col justify-between p-4 ">
-                                    <h5 class="font-semibold text-xl">Nasi Goreng</h5>
-                                    <p class="font-light">Makanan sudah diantar</p>
-                                    <p class="font-medium text-sm pt-3">8 Agustus 2022</p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="my-auto w-full flex justify-end">
+                        <a href="#">
+                            <button type="submit" class="text-xl bg-white p-3 rounded-xl text-biru-kode shadow-lg ring-2 hover:shadow-xl">Ganti</button>
+                        </a>
                     </div>
+                </div>
+                <!-- pilihan selesai -->
+            </article>
+            <article>
+                <!-- alamat pengantaran -->
+                <div class="w-full flex flex-col h-auto p-5 bg-white border-b-2 border-gray-700">
+                    <div>
+                        <p class="text-xl font-medium">Alamat pengantaran</p>
+                        <p class="text-lg">Ahlan</p>
+                        <p class="text-lg">jln.bojongsoang Rt3/Rw4,Bandung,Jawa Barat,5343</p>
+                        <p class="text-lg">Sebelah warung baraya</p>
+                    </div>
+                    <div class="w-full flex justify-end">
+                        <a href="#">
+                            <button type="submit" class="bg-biru-kode p-3 rounded-xl text-white ring-black shadow-md hover:shadow-xl">Ubah Alamat</button>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="w-full flex flex-col h-auto p-5 bg-white">
+                
                 </div>
             </article>
         </section>

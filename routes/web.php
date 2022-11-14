@@ -72,3 +72,18 @@ Route::get('/riwayat', function () {
 Route::get('/promo', function () {
     return view('promo');
 });
+
+// route ke keranjang
+Route::get('/keranjang', function () {
+    return view('keranjang');
+});
+
+// route ke index home
+Route::get('/homeUser', function () {
+    return view('index');
+});
+
+// route ke page transaksi
+Route::get('/transaksi', function () {
+    return view('transaksi');
+});

@@ -22,6 +22,7 @@ module.exports = {
                 'kategori' : '7.8rem',
                 '300' : '18.75rem',
                 'card-promo' : '9.875rem',
+                'ceklist': '2.688rem',
             },
             fontSize : {
                 '20' : '1.25rem',
