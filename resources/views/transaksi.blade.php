@@ -62,7 +62,7 @@
             </article>
             <!-- end judul -->
         </section>
-        <section class="max-w-6xl mx-auto h-auto border-2 bg-slate-200">
+        <section class="max-w-6xl mx-auto border-x-2 border-b-2">
             <!-- pesan antar -->
             <article>
                 <!-- logo image -->
@@ -96,8 +96,105 @@
                 </div>
             </article>
             <article>
-                <div class="w-full flex flex-col h-auto p-5 bg-white">
-                
+                <!-- menu detail transaksi -->
+                <div class="w-full h-auto p-5 bg-white border-b-2 border-black">
+                    <div class="max-w-full flex flex-col p-5 ">
+                        <div class="flex justify-between items-center mx-4">
+                            <a href="#">
+                                <img src={{ URL::asset('/img/banner.jpg') }} alt="menu-detail" class="rounded-lg object-cover h-24 w-28 ">
+                            </a>
+                            <p class="text-xl font-semibold">Nasi goreng telur balado</p>
+                            <p class="text-lg font-semibold"> 20.000</p>
+                            <p class="text-lg font-semibold"> 1x </p>
+                        </div>
+                        <!-- catatan -->
+                        <div class="m-5 max-w-5xl shadow-md flex">
+                            <input type="text" name="catatan" id="kostum-text" placeholder="tidak ada catatan" class="text-2xl w-full h-16 p-4 rounded-lg ring-2 ring-slate-300">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <!-- menu detail transaksi -->
+                <div class="w-full h-auto p-5 bg-white border-b-2 border-black">
+                    <div class="max-w-full flex flex-col p-5 ">
+                        <div class="flex justify-between items-center mx-4">
+                            <a href="#">
+                                <img src={{ URL::asset('/img/banner.jpg') }} alt="menu-detail" class="rounded-lg object-cover h-24 w-28 ">
+                            </a>
+                            <p class="text-xl font-semibold">Nasi goreng telur balado</p>
+                            <p class="text-lg font-semibold"> 20.000</p>
+                            <p class="text-lg font-semibold"> 2x </p>
+                        </div>
+                        <!-- catatan -->
+                        <div class="m-5 max-w-5xl shadow-md flex">
+                            <input type="text" name="catatan" id="kostum-text" placeholder="tidak ada catatan" value="Nasi gorengnya tidak pedas" class="text-2xl w-full h-16 p-4 rounded-lg ring-2 ring-slate-300">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <!-- klaim promo -->
+                <div class="w-full h-auto p-5 bg-white border-b-2 border-black">
+                    <div class="flex ring-2 ring-slate-200 p-3 rounded-xl bg-white shadow-md hover:shadow-lg">
+                        <a href="#">
+                            <img src={{ URL::asset('/img/banner.jpg') }} alt="klaim-promo" class="rounded-full w-24 h-20">
+                            <div class="flex items-center mx-5 w-full justify-between">
+                                <p class="text-xl font-semibold">Promo</p>
+                                <a href="#" class="text-xl">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <!-- ringkasan pembayaran -->
+                <div class="w-full h-auto p-5 bg-white ">
+                    <div class="max-w-full border-2 border-slate-200 rounded-lg">
+                        <p class=" mx-4 py-5 text-2xl font-bold">Ringkasan pembayaran</p>
+                        <div class="flex items-center justify-between border-b-2 border-slate-300">
+                            <p class=" mx-4 py-5 text-xl font-medium">Harga</p>
+                            <div class="flex mx-3">
+                                <p class="text-xl font-medium line-through mx-5">35.000</p>
+                                <p class="text-xl font-medium">30.000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between border-b-2 border-slate-300">
+                            <p class=" mx-4 py-5 text-xl font-medium">Ongkir</p>
+                            <div class="flex mx-3">
+                                <p class="text-xl font-medium">5.000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between border-b-2 border-slate-300">
+                            <p class=" mx-4 py-5 text-xl font-medium">Biaya jasa aplikasi</p>
+                            <div class="flex mx-3">
+                                <p class="text-xl font-medium">2.000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between border-b-2 border-slate-300">
+                            <p class=" mx-4 py-5 text-xl font-medium">Total pembayaran</p>
+                            <div class="flex mx-3">
+                                <p class="text-xl font-medium">37.000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <a href="#">
+                                <p class=" mx-4 py-10 text-xl font-medium text-biru-kode">Lihat detail belanja</p>
+                            </a>
+                            <div class="flex mx-3">
+                                <a href="#" class="text-xl font-medium mx-3"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="bg-white flex justify-center my-5">
+                    <a href="#" class="bg-biru-kode p-4 rounded-lg shadow-md hover:shadow-lg hover:bg-blue-800">
+                        <button type="submit" class="text-lg font-medium text-white">Konfirmasi</button>
+                    </a>
                 </div>
             </article>
         </section>
