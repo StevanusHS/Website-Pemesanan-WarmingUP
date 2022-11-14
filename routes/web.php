@@ -87,3 +87,7 @@ Route::get('/homeUser', function () {
 Route::get('/transaksi', function () {
     return view('transaksi');
 });
+// route ke page invoice
+Route::get('/invoice', function () {
+    return view('invoice');
+});
