@@ -96,3 +96,8 @@ Route::get('/invoice', function () {
 Route::get('/favorite', function () {
     return view('favorite');
 });
+
+// route ke ubah alamat page
+Route::get('/kostumalamat', function () {
+    return view('kostumalamat');
+});
