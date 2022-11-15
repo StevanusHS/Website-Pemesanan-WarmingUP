@@ -101,3 +101,8 @@ Route::get('/favorite', function () {
 Route::get('/kostumalamat', function () {
     return view('kostumalamat');
 });
+
+// route ke pintpoint lokasi
+Route::get('/pinlokasi', function () {
+    return view('pinlokasi');
+});
