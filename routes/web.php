@@ -106,3 +106,8 @@ Route::get('/kostumalamat', function () {
 Route::get('/pinlokasi', function () {
     return view('pinlokasi');
 });
+
+// route ke detail voucher
+Route::get('/detailvoucher', function () {
+    return view('detailvoucher');
+});
