@@ -111,3 +111,8 @@ Route::get('/pinlokasi', function () {
 Route::get('/detailvoucher', function () {
     return view('detailvoucher');
 });
+
+// route ke profile
+Route::get('/profile', function () {
+    return view('profile');
+});
