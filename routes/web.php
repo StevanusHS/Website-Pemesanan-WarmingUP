@@ -121,3 +121,13 @@ Route::get('/profile', function () {
 Route::get('/metodpembayaran', function () {
     return view('metodpembayaran');
 });
+
+// route ke tipe pemesanan
+Route::get('/tipepesan', function () {
+    return view('tipepesan');
+});
+
+// route ke detail transaksi
+Route::get('/detailtransaksi', function () {
+    return view('detailtransaksi');
+});
