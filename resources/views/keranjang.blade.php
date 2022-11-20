@@ -172,10 +172,10 @@
                         <!-- catatan pesanan -->
                         <div class="max-w-4xl mx-auto my-6 h-20 bg-white border-2 shadow-lg rounded-lg">
                             <div class="flex w-full h-full ">
-                                <a href="#" class="text-2xl m-6"><i class="fa-solid fa-percent"></i></a>
+                                <a href="promo" class="text-2xl m-6"><i class="fa-solid fa-percent"></i></a>
                                 <button type="submit" class="text-xl font-semibold w-200">Pakai Voucher</button>
                                 <div class="w-full flex justify-end h-full items-center">
-                                    <a href="#" class="mx-5"><i class="fa-solid fa-arrow-right"></i></a>
+                                    <a href="promo" class="mx-5"><i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +185,7 @@
                                 <p class="text-4xl font-bold">60.000</p>
                             </div>
                             <!-- button beli -->
-                            <a href="#"><button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-light rounded-lg text-2xl px-5 py-2.5 mr-5 w-200 h-16 mb-2 focus:outline-none dark:focus:ring-blue-800">Beli</button></a>
+                            <a href="transaksi"><button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-light rounded-lg text-2xl px-5 py-2.5 mr-5 w-200 h-16 mb-2 focus:outline-none dark:focus:ring-blue-800">Beli</button></a>
                         </div>
                     </div>
                 </div>

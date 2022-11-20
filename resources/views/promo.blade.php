@@ -67,9 +67,15 @@
                 <!-- judul promo voucher -->
                 <div class="w-full h-auto bg-transparent block">
                     <div class="max-w-3xl mx-auto h-auto mt-10 bg-white">
-                        <div class="flex justify-between">
-                            <p class="font-semibold text-xl mb-3">Promo voucher makanan</p>
-                            <a href="#" class="font-semibold text-xl text-biru-kode">Masukin Kode</a>
+                        <div class="flex items-center ">
+                            <a href="#" class="bg-slate-300 w-10 h-10 flex items-center px-3 rounded-full hover:shadow-md">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </a>
+                            <p class="font-semibold text-xl mx-3">Promo voucher makanan</p>
+                        </div>
+                        <div class="my-3 flex justify-between">
+                            <input type="text" name="apply-promo" id="apply-promo" placeholder="masukan kode promo" class=" border-2 border-slate-300 focus:outline-2 outline-blue-300 w-[500px] h-12 rounded-xl px-3 shadow-md">
+                            <button type="submit" class="bg-biru-kode p-3 px-10 rounded-xl text-white shadow-md font-semibold transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800">Terapkan</button>
                         </div>
                         <!-- card promo -->
                         <div class="grid grid-cols-2 gap-5">
@@ -103,62 +109,60 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-white">
+                            <!-- end card promo -->
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-xl font-semibold my-3">Voucher yang belum bisa dipakai</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-slate-300">
                                 <div class="flex flex-col justify-around">
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
-                                    <div class="max-w-sm mx-3 pl-5 bg-white">
+                                    <div class="max-w-sm mx-3 pl-5">
                                         <div class="flex justify-between">
                                             <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
-                                            <a href="#" class="p-1  hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
                                         </div>
                                         <div class="flex justify-between">
                                             <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
-                                            <a href="#" class="p-1  hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-white">
+                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-slate-300">
                                 <div class="flex flex-col justify-around">
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
-                                    <div class="max-w-sm mx-3 pl-5 bg-white">
+                                    <div class="max-w-sm mx-3 pl-5 ">
                                         <div class="flex justify-between">
                                             <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
-                                            <a href="#" class="p-1  hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
                                         </div>
                                         <div class="flex justify-between">
                                             <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
-                                            <a href="#" class="p-1 hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-white">
+                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-slate-300">
                                 <div class="flex flex-col justify-around">
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
-                                    <div class="max-w-sm mx-3 pl-5 bg-white">
+                                    <div class="max-w-sm mx-3 pl-5 ">
                                         <div class="flex justify-between">
                                             <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
-                                            <a href="#" class="p-1  hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
                                         </div>
                                         <div class="flex justify-between">
                                             <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
-                                            <a href="#" class="p-1 hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-white">
+                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-slate-300">
                                 <div class="flex flex-col justify-around">
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
-                                    <div class="max-w-sm mx-3 pl-5 bg-white">
+                                    <div class="max-w-sm mx-3 pl-5 ">
                                         <div class="flex justify-between">
                                             <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
-                                            <a href="#" class="p-1 hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
                                         </div>
                                         <div class="flex justify-between">
                                             <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
-                                            <a href="#" class="p-1 hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
                                         </div>
                                     </div>
                                 </div>

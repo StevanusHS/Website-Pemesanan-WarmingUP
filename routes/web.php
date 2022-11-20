@@ -116,3 +116,8 @@ Route::get('/detailvoucher', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+
+// route ke page metode pembayaran
+Route::get('/metodpembayaran', function () {
+    return view('metodpembayaran');
+});

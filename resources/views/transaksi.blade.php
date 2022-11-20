@@ -89,7 +89,7 @@
                         <p class="text-lg">Sebelah warung baraya</p>
                     </div>
                     <div class="w-full flex justify-end">
-                        <a href="#">
+                        <a href="kostumalamat">
                             <button type="submit" class="bg-biru-kode p-3 rounded-xl text-white ring-black shadow-md hover:shadow-xl">Ubah Alamat</button>
                         </a>
                     </div>

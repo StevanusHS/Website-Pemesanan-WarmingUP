@@ -56,62 +56,46 @@
                 <div class="relative">
                     <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
-                        <p class="my-auto text-5xl font-semibold text-white pt-11">Ubah Alamat</p>
+                        <p class="my-auto text-5xl font-semibold text-white pt-11">Metode pembayaran</p>
                     </div>
                 </div>
             </article>
             <!-- end judul -->
         </section>
         <section>
-            <!-- form costum alamat -->
             <article>
-                <div class="max-w-4xl mx-auto my-10 border-2 border-slate-400 rounded-lg">
-                    <form action="#">
-                        <div class="max-w-4xl mx-3 m-6">
-                            <label for="pinpoint" class="text-2xl font-semibold">Pinpoint</label>
-                            <div class="max-w-4xl flex h-16 rounded-xl shadow-lg my-5">
-                                <div class="p-4">
-                                    <a href="#" class="text-xl"><i class="fa-solid fa-location-dot"></i></a>
-                                </div>
-                                <div class="flex w-full">
-                                    <div href="#" class="w-full text-2xl">
-                                        <input type="text" name="lokasi" id="lokasi" placeholder="Jln.sukabirus" class="h-full w-full rounded-xl">
+                <!-- judul -->
+                <div class="container mx-auto">
+                    <div class="max-w-xl mx-auto m-6 border-2 border-slate-200 rounded-xl shadow-lg ">
+                        <p class="text-xl font-semibold p-3">Metode pembayaran</p>
+                        <!-- pilihan metode pembayaran -->
+                        <ul>
+                            <li>
+                                <div class="border-b-2 border-slate-300 flex items-center p-3">
+                                    <img src={{ URL::asset('/img/banner.jpg') }} alt="gambar cash" class=" w-9 h-9 rounded-full">
+                                    <p class="text-lg font-semibold mx-3">Cash</p>
+                                    <div class="flex justify-end  w-full">
+                                        <label for="cash"></label>
+                                        <input type="radio" name="default-radio" id="cash">
                                     </div>
                                 </div>
-                                <div class="flex items-center justify-end mx-3">
-                                    <a href="pinlokasi">
-                                        <p class="text-2xl font-semibold text-hijau-ubah">Ubah</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- catatan lokasi -->
-                            <label for="pinpoint" class="text-2xl font-semibold">Catatan lokasi</label>
-                            <div class="max-w-4xl flex h-16 rounded-xl shadow-lg my-5">
-                                <div class="flex w-full px-3">
-                                    <div href="#" class="w-full text-2xl">
-                                        <input type="text" name="lokasi" id="lokasi" placeholder="masukan alamat anda" class="h-full w-full rounded-xl" value="kost maulana yang ada rumah makan baraya">
+                            </li>
+                            <li>
+                                <div class=" flex items-center p-3">
+                                    <img src={{ URL::asset('/img/banner.jpg') }} alt="gambar cash" class=" w-9 h-9 rounded-full">
+                                    <p class="text-lg font-semibold mx-3">Qris</p>
+                                    <div class="flex justify-end  w-full">
+                                        <label for="qris"></label>
+                                        <input type="radio" name="default-radio" id="qris">
                                     </div>
                                 </div>
-                            </div>
-                            <!-- penerima pesan -->
-                            <label for="pinpoint" class="text-2xl font-semibold">Penerima pesan</label>
-                            <div class="max-w-4xl flex h-16 rounded-xl shadow-lg my-5">
-                                <div class="flex w-full px-3">
-                                    <div href="#" class="w-full text-2xl"><input type="text" name="lokasi" id="lokasi" placeholder="masukan alamat anda" class="h-full w-full rounded-xl" value="step"></div>
-                                </div>
-                            </div>
-                            <!-- no hp -->
-                            <label for="pinpoint" class="text-2xl font-semibold">No.Hp</label>
-                            <div class="max-w-4xl flex h-16 rounded-xl shadow-lg my-5">
-                                <div class="flex w-full px-3">
-                                    <div class="w-full text-2xl"><input type="text" name="lokasi" id="lokasi" placeholder="masukan alamat anda" class="h-full w-full rounded-xl" value="081213"></div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center my-3">
-                                <button type="submit" class="bg-biru-kode p-3 px-10 text-xl font-semibold text-white rounded-xl shadow-lg hover:bg-blue-800">Simpan</button>
-                            </div>
-                        </div>
-                    </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- button bayar -->
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-biru-kode rounded-xl shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800  p-3 px-10 text-white text-xl font-semibold">Bayar dan antar sekarang</button>
+                    </div>
                 </div>
             </article>
         </section>
