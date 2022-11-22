@@ -11,7 +11,7 @@
 
 <body>
     <!-- navbar start -->
-   <nav class="fixed z-10 w-full flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
+    <nav class="fixed z-10 w-full flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
         <div class="container-fluid  w-full flex flex-wrap items-center justify-between px-6">
             <button class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -86,84 +86,25 @@
     </nav>
     <!-- navbar end -->
     <main>
-        <!-- judul -->
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="banner">
+                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
-                        <p class="my-auto text-5xl font-semibold text-white pt-11">Menu</p>
+                        <p class="my-auto text-5xl font-semibold text-white pt-11">Paket</p>
                     </div>
                 </div>
             </article>
             <!-- end judul -->
         </section>
+        <!-- tabel total belanja -->
         <section>
             <article class="w-full h-auto bg-white">
                 <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
                     <div class="flex">
-                        <p class="font-semibold text-2xl mx-10 mb-3">Kategori menu</p>
+                        <p class="font-semibold text-2xl mx-10 mb-3">Rekomendasi</p>
                     </div>
-                    <!-- list kategori -->
-                    <div class="flex mx-5">
-                        <div class="max-w-max h-auto bg-transparanet">
-                            <a href="warmindo">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/warmindoLogo.jpg') }} alt="kateogri warmindo">
-                                <div>
-                                    <p class="font-semibold text-20 text-center">Warmindo</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="max-w-max h-auto bg-transparanet">
-                            <a href="bento">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/bentoLog.jpg') }} alt="kateogri bento">
-                                <div>
-                                    <p class="font-semibold text-20 text-center">Bento</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="max-w-max h-auto bg-transparanet">
-                            <a href="nasgor">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/nasgorLogo.png') }} alt="kateogri">
-                                <div>
-                                    <p class="font-semibold text-20 text-center">Nasgor</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="max-w-max h-auto bg-transparanet">
-                            <a href="camilan">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/camilanLogo.png') }} alt="kateogri">
-                                <div>
-                                    <p class="font-semibold text-20 text-center">Camilan</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="max-w-max h-auto bg-transparanet">
-                            <a href="minuman">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/minumanLogo.jpg') }} alt="kateogri">
-                                <div>
-                                    <p class="font-semibold text-20 text-center">Minuman</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="max-w-max h-auto bg-transparanet">
-                            <a href="kopi">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/kopiLogo.png') }} alt="kateogri">
-                                <div>
-                                    <p class="font-semibold text-20 text-center">Kopi</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <!-- end kategori -->
-            <article>
-                <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
-                    <div class="flex">
-                        <p class="font-semibold text-2xl mx-10 mb-3">Terlaris</p>
-                    </div>
-                    <!-- card makanan -->
+                    <!-- card bento -->
                     <div class="flex justify-center">
                         <div class="grid grid-cols-4 gap-5">
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
@@ -258,6 +199,14 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <p class="font-semibold text-2xl mx-10 mb-3 mt-3">Daftar menu paket</p>
+                    </div>
+                    <!-- card bento -->
+                    <div class="flex justify-center">
+                        <div class="grid grid-cols-4 gap-5">
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
@@ -355,8 +304,8 @@
             </article>
         </section>
     </main>
-     <!--footer-->
-     <footer class="w-full bg-footer ">
+    <!--footer-->
+    <footer class="w-full bg-footer ">
         <div class=" flex justify-between  m-5">
             <div class="max-w-sm m-3 flex flex-col text-white">
                 <p class="text-2xl font-semibold">Warming UP</p>

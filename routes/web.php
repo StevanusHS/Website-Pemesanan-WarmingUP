@@ -131,3 +131,8 @@ Route::get('/tipepesan', function () {
 Route::get('/detailtransaksi', function () {
     return view('detailtransaksi');
 });
+
+// route ke page paket
+Route::get('/paket', function () {
+    return view('paket');
+});

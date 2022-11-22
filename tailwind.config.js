@@ -17,6 +17,7 @@ module.exports = {
                 'button' : '#4B5DFF',
                 'biru-kode': '#0066FF',
                 'hijau-ubah': '#12BE03',
+                'red-costum': '#FF3232',
             },
             spacing : {
                 '200' : '12rem',

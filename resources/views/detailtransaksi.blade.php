@@ -6,48 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 </head>
 
 <body>
-    <!-- navbar start -->
-    <header class="bg-white shadow-lg fixed top-0 left-0 w-full flex items-center z-10 hover:bg-white">
-        <div class="container max-w-full">
-            <div class="flex items-center justify-between">
-                <div class="px-4">
-                    <a href="#" class="text-lg font-bold text-slate-900 block py-6">Warming Up</a>
-                </div>
-                <div class="flex items-center px-4">
-                    <nav id="nav-menu" class="hidden py-5 bg-white dhadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="homeUser" class="text-base text-black py-2 mx-8 flex font-semibold group-hover:text-blue-500">Home</a>
+   <!-- navbar start -->
+   <nav class="fixed z-10 w-full flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid  w-full flex flex-wrap items-center justify-between px-6">
+            <button class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+                <a href="home" class="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 mt-2 lg:mt-2 mr-1">
+                    <p class="text-lg font-semibold">Warming Up</p>
+                </a>
+                <!-- left links -->
+                <ul class="navbar-nav flex justify-end   pl-0 list-style-none mx-auto w-[900px]">
+                    <li class="nav-item p-2">
+                        <div class="flex">
+                            <input type="text" name="search-bar" id="search-bar" class="nav-link text-gray-500 hover:text-blue-500 focus:text-gray-900 p-0 w-[500px] shadow-md rounded-l-md focus: outline-blue-400 ring-1">
+                            <label for="search-bar" class="bg-slate-300 px-2  rounded-r-lg">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </label>
+                        </div>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="menu">Menu</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="promo">Promo</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="#">Paket</a>
+                    </li>
+                </ul>
+                <!-- right elements -->
+                <div class="flex items-center justify-end relative ">
+                    <!-- icon -->
+                    <a href="keranjang" class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- profile image dropdown -->
+                    <div class="dropdown-relative">
+                        <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
+                            <li>
+                                <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
+                                    <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
+                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                    </div>
+                                </a>
                             </li>
-                            <li class="group">
-                                <a href="menu" class="text-base text-black py-2 mx-8 flex font-semibold group-hover:text-blue-500">Menu</a>
+                            <li>
+                                <a href="daftarTransaksi" class="dropdown-item text-sm py-2 px-4  block w-full whitespace-nowrap bg-transparent text-gray-700  font-semibold border-b-2 hover:bg-slate-200">Riwayat</a>
                             </li>
-                            <li class="group">
-                                <a href="promo" class="text-base text-black py-2 mx-8 flex font-semibold group-hover:text-blue-500">Promo</a>
+                            <li>
+                                <a href="favorite" class="dropdown-item text-sm py-2 px-4  block w-full whitespace-nowrap bg-transparent text-gray-700  font-semibold border-b-2 hover:bg-slate-200">Favorite</a>
                             </li>
-                            <li class="group">
-                                <a href="riwayat" class="text-base text-black py-2 mx-8 flex font-semibold group-hover:text-blue-500">Riwayat</a>
-                            </li>
-                            <li class="group">
-                                <a href="favorite" class="text-base text-black py-2 mx-8 flex font-semibold group-hover:text-blue-500">Favorite</a>
-                            </li>
-                            <li class="group">
-                                <a href="keranjang" class="py-2 mx-5 flex my-1.5 relative"><i class="fa-sharp fa-solid fa-cart-shopping"><span class="w-2 h-2 absolute text-xs bg-red-600 rounded-full top-0 right-0 text-white "></span></i></a>
-                            </li>
-                            <li class="group">
-                                <a href="profile">
-                                    <img class="h-10 w-10 flex rounded-full mx-3 shadow bg-cover" src={{ URL::asset('/img/profile.jpg') }} alt="profile">
+                            <li>
+                                <a href="login" class="dropdown-item text-sm py-2 px-4  w-full whitespace-nowrap bg-transparent text-gray-700  font-semibold  flex justify-center">
+                                    <p class="mr-2">Keluar</p>
+                                    <p><i class="fa-solid fa-right-from-bracket"></i></p>
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
     <!-- navbar end -->
     <main>
         <!-- judul -->
@@ -131,65 +167,35 @@
             </article>
         </section>
     </main>
-
     <!--footer-->
-    <footer class=" bg-footer pt-8 pb-6 mt-10">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap text-left lg:text-left">
-                <div class="w-full lg:w-6/12 px-4">
-                    <h4 class="text-3xl fonat-semibold text-white">Warming Up</h4>
-                    <h5 class="text-lg mt-0 mb-2 text-white">
-                        Aplikasi food and beverage
-                    </h5>
-                    <div class="mt-6 lg:mb-0 mb-6">
-                        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                            <i class="fab fa-instagram"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                            <i class="fab fa-facebook-square"></i></button>
-                        </button>
-                    </div>
-                </div>
-                <div class="w-full lg:w-6/12 px-4">
-                    <div class="flex flex-wrap items-top mb-6">
-                        <div class="w-full lg:w-4/12 px-4 ml-auto">
-                            <span class="block uppercase text-white text-sm font-semibold mb-2">Useful Links</span>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
-                                </li>
-                                <li>
-                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4">
-                            <span class="block uppercase text-white text-sm font-semibold mb-2">Other Resources</span>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
-                                </li>
-                                <li>
-                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a class="text-white hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <footer class="w-full bg-footer ">
+        <div class=" flex justify-between  m-5">
+            <div class="max-w-sm m-3 flex flex-col text-white">
+                <p class="text-2xl font-semibold">Warming UP</p>
+                <p class="text-lg font-light">Food and Bavarage</p>
+                <a href="https://www.instagram.com/warmingupid/" target="_blank" class="text-lg">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </div>
-            <hr class="my-6 border-blueGray-300">
-            <div class="flex flex-wrap items-center md:justify-between justify-center">
-                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-                    <div class="text-sm text-white font-semibold py-1">
-                        Copyright © <span id="get-current-year">2021</span><a href="#" class="text-white hover:text-blue-300" target="_blank"> created by
-                            <a href="#" class="text-blueGray-500 hover:text-white">Warming UP</a>.
-                    </div>
+            <!-- link footer -->
+            <div class="flex text-white">
+                <div class="max-w-sm  m-3">
+                    <p class="text-lg font-semibold uppercase">Useful Links</p>
+                    <a href="#" class="text-md font-medium">About US</a>
+                </div>
+                <div class="max-w-sm flex flex-col  m-3">
+                    <p class="text-lg font-semibold uppercase">PRIVACY POLICY</p>
+                    <a href="#" class="text-md font-medium">Terms & Conditions</a>
+                    <a href="#" class="text-md font-medium">Privacy</a>
+                    <a href="#" class="text-md font-medium">Contact Us</a>
                 </div>
             </div>
         </div>
+        <div class="max-w-xl mx-auto border-t-2 border-white text-white">
+            <p class="text-center py-2">Copyright © 2021 created by Warming Up</p>
+        </div>
     </footer>
-    <script src="../../resources/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 
 </html>
