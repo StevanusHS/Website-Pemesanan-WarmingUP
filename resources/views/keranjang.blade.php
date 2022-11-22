@@ -117,7 +117,7 @@
                         <p class="text-lg">Total Harga (3 barang)</p>
                         <p class="text-lg text-red-costum">Rp50.000</p>
                     </div>
-                    <button type="submit" class="bg-biru-kode p-3 mx-3 my-5 rounded-xl shadow-md text-lg font-semibold text-white hover:bg-blue-700">Beli</button>
+                    <button type="submit" class="bg-blue-500 p-3 mx-3 my-5 rounded-xl shadow-md text-lg font-semibold text-white hover:bg-blue-700">Beli</button>
                 </div>
             </article>
             <article class=" mx-10 w-full">

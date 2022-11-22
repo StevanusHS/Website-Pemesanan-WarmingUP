@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('index');
 });
 
 
@@ -79,7 +79,7 @@ Route::get('/keranjang', function () {
 });
 
 // route ke index home
-Route::get('/homeUser', function () {
+Route::get('/index', function () {
     return view('index');
 });
 
