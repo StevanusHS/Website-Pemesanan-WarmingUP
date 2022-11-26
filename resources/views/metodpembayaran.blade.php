@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -90,7 +90,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Metode pembayaran</p>
                     </div>
@@ -108,7 +108,7 @@
                         <ul>
                             <li>
                                 <div class="border-b-2 border-slate-300 flex items-center p-3">
-                                    <img src={{ URL::asset('/img/banner.jpg') }} alt="gambar cash" class=" w-9 h-9 rounded-full">
+                                    <img src={{ URL::asset('/img/icon/cash.jpg') }} alt="gambar cash" class=" w-9 h-9 rounded-full">
                                     <p class="text-lg font-semibold mx-3">Cash</p>
                                     <div class="flex justify-end  w-full">
                                         <label for="cash"></label>
@@ -118,7 +118,7 @@
                             </li>
                             <li>
                                 <div class=" flex items-center p-3">
-                                    <img src={{ URL::asset('/img/banner.jpg') }} alt="gambar cash" class=" w-9 h-9 rounded-full">
+                                    <img src={{ URL::asset('/img/icon/qris.jpg') }} alt="gambar cash" class=" w-9 h-9 rounded-full">
                                     <p class="text-lg font-semibold mx-3">Qris</p>
                                     <div class="flex justify-end  w-full">
                                         <label for="qris"></label>
@@ -129,9 +129,11 @@
                         </ul>
                     </div>
                     <!-- button bayar -->
+                    <a href="detailtransaksi">
                     <div class="flex justify-center">
                         <button type="submit" class="bg-blue-500 rounded-xl shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800  p-3 px-10 text-white text-xl font-semibold">Bayar dan antar sekarang</button>
                     </div>
+                </a>
                 </div>
             </article>
         </section>

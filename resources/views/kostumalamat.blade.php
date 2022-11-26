@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -90,7 +90,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Ubah Alamat</p>
                     </div>
@@ -133,17 +133,17 @@
                             <label for="pinpoint" class="text-2xl font-semibold">Penerima pesan</label>
                             <div class="max-w-4xl flex h-16 rounded-xl shadow-lg my-5">
                                 <div class="flex w-full px-3">
-                                    <div href="#" class="w-full text-2xl"><input type="text" name="lokasi" id="lokasi" placeholder="masukan alamat anda" class="h-full w-full rounded-xl" value="step"></div>
+                                    <div href="#" class="w-full text-2xl"><input type="text" name="lokasi" id="lokasi" placeholder="masukan alamat anda" class="h-full w-full rounded-xl" value="stevan"></div>
                                 </div>
                             </div>
                             <!-- no hp -->
                             <label for="pinpoint" class="text-2xl font-semibold">No.Hp</label>
                             <div class="max-w-4xl flex h-16 rounded-xl shadow-lg my-5">
                                 <div class="flex w-full px-3">
-                                    <div class="w-full text-2xl"><input type="text" name="lokasi" id="lokasi" placeholder="masukan alamat anda" class="h-full w-full rounded-xl" value="081213"></div>
+                                    <div class="w-full text-2xl"><input type="text" name="lokasi" id="lokasi" placeholder="masukan alamat anda" class="h-full w-full rounded-xl" value="081213141516"></div>
                                 </div>
                             </div>
-                            <div class="flex justify-center my-3">
+                                <div class="flex justify-center my-3">
                                 <button type="submit" class="bg-blue-500 p-3 px-10 text-xl font-semibold text-white rounded-xl shadow-lg hover:bg-blue-800">Simpan</button>
                             </div>
                         </div>

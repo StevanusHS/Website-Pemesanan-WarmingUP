@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -90,7 +90,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-300 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-300 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Detail</p>
                     </div>
@@ -103,7 +103,7 @@
             <article>
                 <!-- logo image -->
                 <div class="w-full flex h-auto p-5 bg-white border-b-2 border-gray-700">
-                    <a href="#"><img src={{ URL::asset('/img/banner.jpg') }} alt="pesan-antar" class="max-w-sm h-16 w-16 rounded-full object-cover"></a>
+                    <a href="#"><img src={{ URL::asset('/img/icon/pesanantar.jpg') }} alt="pesan-antar" class="max-w-sm h-16 w-16 rounded-full object-cover"></a>
                     <div class="my-auto">
                         <p class="text-xl font-semibold mx-3 w-full">Pesan antar</p>
                     </div>
@@ -120,7 +120,7 @@
                 <div class="w-full flex flex-col h-auto p-5 bg-white border-b-2 border-gray-700">
                     <div>
                         <p class="text-xl font-medium">Alamat pengantaran</p>
-                        <p class="text-lg">Ahlan</p>
+                        <p class="text-lg">Jemi</p>
                         <p class="text-lg">jln.bojongsoang Rt3/Rw4,Bandung,Jawa Barat,5343</p>
                         <p class="text-lg">Sebelah warung baraya</p>
                     </div>
@@ -137,10 +137,10 @@
                     <div class="max-w-full flex flex-col p-5 ">
                         <div class="flex justify-between items-center mx-4">
                             <a href="#">
-                                <img src={{ URL::asset('/img/banner.jpg') }} alt="menu-detail" class="rounded-lg object-cover h-24 w-28 ">
+                                <img src={{ URL::asset('/img/makanan/siomay.jpg') }} alt="menu-detail" class="rounded-lg object-cover h-24 w-28 ">
                             </a>
-                            <p class="text-xl font-semibold">Nasi goreng telur balado</p>
-                            <p class="text-lg font-semibold"> 20.000</p>
+                            <p class="text-xl font-semibold"> Siomay </p>
+                            <p class="text-lg font-semibold"> 17.000 </p>
                             <p class="text-lg font-semibold"> 1x </p>
                         </div>
                         <!-- catatan -->
@@ -156,10 +156,10 @@
                     <div class="max-w-full flex flex-col p-5 ">
                         <div class="flex justify-between items-center mx-4">
                             <a href="#">
-                                <img src={{ URL::asset('/img/banner.jpg') }} alt="menu-detail" class="rounded-lg object-cover h-24 w-28 ">
+                                <img src={{ URL::asset('/img/nasgor/nasigorengtelur.jpg') }} alt="menu-detail" class="rounded-lg object-cover h-24 w-28 ">
                             </a>
-                            <p class="text-xl font-semibold">Nasi goreng telur balado</p>
-                            <p class="text-lg font-semibold"> 20.000</p>
+                            <p class="text-xl font-semibold">Nasi goreng telur</p>
+                            <p class="text-lg font-semibold"> 17.000</p>
                             <p class="text-lg font-semibold"> 2x </p>
                         </div>
                         <!-- catatan -->
@@ -173,8 +173,8 @@
                 <!-- klaim promo -->
                 <div class="w-full h-auto p-5 bg-white border-b-2 border-black">
                     <div class="flex ring-2 ring-slate-200 p-3 rounded-xl bg-white shadow-md hover:shadow-lg">
-                        <a href="#">
-                            <img src={{ URL::asset('/img/banner.jpg') }} alt="klaim-promo" class="rounded-full w-24 h-20">
+                        <a href="promo">
+                            <img src={{ URL::asset('/img/icon/iconpromo.jpg') }} alt="klaim-promo" class="rounded-full w-24 h-20">
                             <div class="flex items-center mx-5 w-full justify-between">
                                 <p class="text-xl font-semibold">Promo</p>
                                 <a href="promo" class="text-xl">
@@ -193,8 +193,8 @@
                         <div class="flex items-center justify-between border-b-2 border-slate-300">
                             <p class=" mx-4 py-5 text-xl font-medium">Harga</p>
                             <div class="flex mx-3">
-                                <p class="text-xl font-medium line-through mx-5">35.000</p>
-                                <p class="text-xl font-medium">30.000</p>
+                                <p class="text-xl font-medium line-through mx-5">51.000</p>
+                                <p class="text-xl font-medium">40.000</p>
                             </div>
                         </div>
                         <div class="flex items-center justify-between border-b-2 border-slate-300">
@@ -212,7 +212,7 @@
                         <div class="flex items-center justify-between border-b-2 border-slate-300">
                             <p class=" mx-4 py-5 text-xl font-medium">Total pembayaran</p>
                             <div class="flex mx-3">
-                                <p class="text-xl font-medium">37.000</p>
+                                <p class="text-xl font-medium">47.000</p>
                             </div>
                         </div>
                         <div class="flex items-center justify-between">

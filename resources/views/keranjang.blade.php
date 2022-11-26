@@ -10,8 +10,8 @@
 </head>
 
 <body>
-     <!-- navbar start -->
-     <nav class="fixed z-10 w-full flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
+    <!-- navbar start -->
+    <nav class="fixed z-10 w-full flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
         <div class="container-fluid  w-full flex flex-wrap items-center justify-between px-6">
             <button class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -90,7 +90,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-300 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-300 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Keranjang</p>
                     </div>
@@ -106,19 +106,21 @@
                         <i class="fa-solid fa-percent"></i>
                     </a>
                     <p class="text-lg font-semibold mx-3 w-full">Pakai Voucher</p>
-                    <a href="#" class="w-full flex justify-end">
+                    <a href="promo" class="w-full flex justify-end">
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
                 <!-- Ringkasan belanja -->
+                <a href="transaksi">
                 <div class="max-w-sm flex flex-col rounded-xl shadow-md  m-3 border-2 border-slate-500">
+                    
                     <p class="text-lg font-semibold m-3">Ringkasan belanja</p>
                     <div class="flex justify-between mx-3">
                         <p class="text-lg">Total Harga (3 barang)</p>
                         <p class="text-lg text-red-costum">Rp50.000</p>
                     </div>
                     <button type="submit" class="bg-blue-500 p-3 mx-3 my-5 rounded-xl shadow-md text-lg font-semibold text-white hover:bg-blue-700">Beli</button>
-                </div>
+                </div></a>
             </article>
             <article class=" mx-10 w-full">
                 <div class=" border-2 border-slate-300  mt-5 rounded-md">
@@ -133,8 +135,8 @@
                     <div class="m-3  flex items-center ">
                         <div class="w-full flex items-center my-3">
                             <input type="checkbox" name="keranjang-makanan" id="jumlah-makanan" class="w-7 h-7 mx-3">
-                            <img src={{ URL::asset('/img/banner.jpg') }} alt="keranjang-makanan" class="w-[68px] h-[68px] rounded-xl mx-5">
-                            <p class="text-lg font-semibold">Nasi goreng balado ayam</p>
+                            <img src={{ URL::asset('/img/makanan/siomay.jpg') }} alt="keranjang-makanan" class="w-[68px] h-[68px] rounded-xl mx-5">
+                            <p class="text-lg font-semibold">Siomay</p>
                         </div>
                         <!-- kostumisasi makanan,nambah dan hapus -->
                         <div class="w-full ">
@@ -158,13 +160,13 @@
                         <input type="text" name="catatan" id="catatan-keranjang" placeholder="Catatan" class="w-full h-[44px] rounded-xl px-3 focus:outline-blue-400">
                     </div>
                 </div>
-                 <!-- keranjang makanan -->
-                 <div class="shadow-md rounded-md border-2 border-slate-300">
+                <!-- keranjang makanan -->
+                <div class="shadow-md rounded-md border-2 border-slate-300">
                     <div class="m-3  flex items-center ">
                         <div class="w-full flex items-center my-3">
                             <input type="checkbox" name="keranjang-makanan" id="jumlah-makanan" class="w-7 h-7 mx-3">
-                            <img src={{ URL::asset('/img/banner.jpg') }} alt="keranjang-makanan" class="w-[68px] h-[68px] rounded-xl mx-5">
-                            <p class="text-lg font-semibold">Nasi goreng balado ayam</p>
+                            <img src={{ URL::asset('/img/nasgor/nasigorengtelur.jpg') }} alt="keranjang-makanan" class="w-[68px] h-[68px] rounded-xl mx-5">
+                            <p class="text-lg font-semibold">Nasi goreng telor</p>
                         </div>
                         <!-- kostumisasi makanan,nambah dan hapus -->
                         <div class="w-full ">
@@ -188,13 +190,13 @@
                         <input type="text" name="catatan" id="catatan-keranjang" placeholder="Catatan" class="w-full h-[44px] rounded-xl px-3 focus:outline-blue-400">
                     </div>
                 </div>
-                 <!-- keranjang makanan -->
-                 <div class="shadow-md rounded-md border-2 border-slate-300">
+                <!-- keranjang makanan -->
+                <div class="shadow-md rounded-md border-2 border-slate-300">
                     <div class="m-3  flex items-center ">
                         <div class="w-full flex items-center my-3">
                             <input type="checkbox" name="keranjang-makanan" id="jumlah-makanan" class="w-7 h-7 mx-3">
-                            <img src={{ URL::asset('/img/banner.jpg') }} alt="keranjang-makanan" class="w-[68px] h-[68px] rounded-xl mx-5">
-                            <p class="text-lg font-semibold">Nasi goreng balado ayam</p>
+                            <img src={{ URL::asset('/img/minuman/kopisusuaren.jpg') }} alt="keranjang-makanan" class="w-[68px] h-[68px] rounded-xl mx-5">
+                            <p class="text-lg font-semibold">Kopi susu aren</p>
                         </div>
                         <!-- kostumisasi makanan,nambah dan hapus -->
                         <div class="w-full ">
@@ -221,8 +223,8 @@
             </article>
         </section>
     </main>
-     <!--footer-->
-     <footer class="w-full bg-footer ">
+    <!--footer-->
+    <footer class="w-full bg-footer ">
         <div class=" flex justify-between  m-5">
             <div class="max-w-sm m-3 flex flex-col text-white">
                 <p class="text-2xl font-semibold">Warming UP</p>

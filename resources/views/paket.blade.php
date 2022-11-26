@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -89,7 +89,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Paket</p>
                     </div>
@@ -98,210 +98,493 @@
             <!-- end judul -->
         </section>
         <!-- tabel total belanja -->
-        <section>
-            <article class="w-full h-auto bg-white">
-                <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
-                    <div class="flex">
-                        <p class="font-semibold text-2xl mx-10 mb-3">Rekomendasi</p>
-                    </div>
-                    <!-- card bento -->
-                    <div class="flex justify-center">
-                        <div class="grid grid-cols-4 gap-5">
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div class="relative">
+        <!-- paket sarapan -->
+        <article>
+            <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
+                <div class="container flex justify-between">
+                    <p class="font-semibold text-2xl mx-10 mb-3">Paket Sarapan</p>
+                    <a href="semuapaketsarapan">
+                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-9 mb-2">Lihat semua</button>
+                </div>
+                </a>
+                <!-- card paket sarapan -->
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-4 gap-5">
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/paketsarapan/sarapan1.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">Sarapan 1</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp14.000</p>
                                     </a>
                                 </div>
-                                <div>
-                                </div>
-                                <div class="py-2 flex flex-col justify-between bg-white h-40">
-                                    <div class="w-full h-auto bg-white ">
-                                        <a href="#">
-                                            <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
-                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
-                                        </a>
-                                    </div>
-                                    <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
-                                    </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
                                 </div>
                             </div>
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div class="relative">
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/paketsarapan/sarapan2.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">Sarapan 2</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp15.000</p>
                                     </a>
                                 </div>
-                                <div>
-                                </div>
-                                <div class="py-2 flex flex-col justify-between bg-white h-40">
-                                    <div class="w-full h-auto bg-white ">
-                                        <a href="#">
-                                            <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
-                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
-                                        </a>
-                                    </div>
-                                    <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
-                                    </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
                                 </div>
                             </div>
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div class="relative">
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/paketsarapan/sarapan3.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">Sarapan 3</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp13.000</p>
                                     </a>
                                 </div>
-                                <div>
-                                </div>
-                                <div class="py-2 flex flex-col justify-between bg-white h-40">
-                                    <div class="w-full h-auto bg-white ">
-                                        <a href="#">
-                                            <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
-                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
-                                        </a>
-                                    </div>
-                                    <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
-                                    </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
                                 </div>
                             </div>
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div class="relative">
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/paketsarapan/sarapan4.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">Sarapan 4</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp10.000</p>
                                     </a>
                                 </div>
-                                <div>
-                                </div>
-                                <div class="py-2 flex flex-col justify-between bg-white h-40">
-                                    <div class="w-full h-auto bg-white ">
-                                        <a href="#">
-                                            <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
-                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
-                                        </a>
-                                    </div>
-                                    <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
-                                    </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex">
-                        <p class="font-semibold text-2xl mx-10 mb-3 mt-3">Daftar menu paket</p>
-                    </div>
-                    <!-- card bento -->
-                    <div class="flex justify-center">
-                        <div class="grid grid-cols-4 gap-5">
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div class="relative">
+                </div>
+        </article>
+
+        <!--Paket makan berdua-->
+        <article>
+            <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
+                <div class="container flex justify-between">
+                    <p class="font-semibold text-2xl mx-10 mb-3">Paket Makan Berdua (PMB)</p>
+                    <a href="semuapmb">
+                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-9 mb-2">Lihat semua</button>
+                </div>
+                </a>
+                <!-- card pmb -->
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-4 gap-5">
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pmb/pmb1.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PMB 1</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp32.000</p>
                                     </a>
                                 </div>
-                                <div>
-                                </div>
-                                <div class="py-2 flex flex-col justify-between bg-white h-40">
-                                    <div class="w-full h-auto bg-white ">
-                                        <a href="#">
-                                            <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
-                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
-                                        </a>
-                                    </div>
-                                    <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
-                                    </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
                                 </div>
                             </div>
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div class="relative">
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pmb/pmb2.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PMB 2</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp34.000</p>
                                     </a>
                                 </div>
-                                <div>
-                                </div>
-                                <div class="py-2 flex flex-col justify-between bg-white h-40">
-                                    <div class="w-full h-auto bg-white ">
-                                        <a href="#">
-                                            <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
-                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
-                                        </a>
-                                    </div>
-                                    <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
-                                    </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
                                 </div>
                             </div>
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div class="relative">
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pmb/pmb3.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PMB 3</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp34.000</p>
                                     </a>
                                 </div>
-                                <div>
-                                </div>
-                                <div class="py-2 flex flex-col justify-between bg-white h-40">
-                                    <div class="w-full h-auto bg-white ">
-                                        <a href="#">
-                                            <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
-                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
-                                        </a>
-                                    </div>
-                                    <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
-                                    </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
                                 </div>
                             </div>
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
-                                <div class="relative">
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pmb/pmb4.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PMB 4</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp32.000</p>
                                     </a>
                                 </div>
-                                <div>
-                                </div>
-                                <div class="py-2 flex flex-col justify-between bg-white h-40">
-                                    <div class="w-full h-auto bg-white ">
-                                        <a href="#">
-                                            <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
-                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
-                                        </a>
-                                    </div>
-                                    <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
-                                    </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-            </article>
+                </div>
+        </article>
+
+        <!--Paket makan berempat-->
+        <article>
+            <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
+                <div class="container flex justify-between">
+                    <p class="font-semibold text-2xl mx-10 mb-3">Paket Makan Berempat (PAMER)</p>
+                </div>
+                <!-- card pamer -->
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-4 gap-5">
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pamer/pamer1.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PAMER 1</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp62.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pamer/pamer2.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PAMER 2</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp62.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pamer/pamer3.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PAMER 3</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp48.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pamer/pamer4.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PAMER 4</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp42.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article>
+
+        <!--Paket nyaman-->
+        <article>
+            <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
+                <div class="container flex justify-between">
+                    <p class="font-semibold text-2xl mx-10 mb-3">Paket Nyaman (PN)</p>
+                    <a href="semuapn">
+                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-9 mb-2">Lihat semua</button>
+                </div>
+                </a>
+                <!-- card pn -->
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-4 gap-5">
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pn/pn1.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PN 1</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp25.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pn/pn2.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PN 2</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp23.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pn/pn3.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PN 3</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp24.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/pn/pn4.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">PN 4</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp25.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article>
+
+        <!--Paket bakar celup-->
+        <article>
+            <div class="block mx-auto max-w-4xl h-auto py-5 bg-white">
+                <div class="container flex justify-between">
+                    <p class="font-semibold text-2xl mx-10 mb-3">Paket Bakar Celup</p>
+                </div>
+                <!-- card makanan -->
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-4 gap-5">
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/bakarcelup/bakarcelup.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">Bakar celup 1 (6 orang)</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp450.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                            <div class="relative">
+                                <a href="#">
+                                    <img src={{ URL::asset('/img/bakarcelup/bakarcelup.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] w-full object-cover">
+                                </a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                <div class="w-full h-auto bg-white ">
+                                    <a href="#">
+                                        <div class="flex justify-between">
+                                            <p class="font-normal px-3 text-20">Bakar celup 2 (10 orang)</p>
+                                            <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                        <p class="font-semibold px-3 text-sm">Rp700.000</p>
+                                    </a>
+                                </div>
+                                <div class="w-full flex justify-end bg-white items-end">
+                                    <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article>
         </section>
     </main>
     <!--footer-->

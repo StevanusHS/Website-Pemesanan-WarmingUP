@@ -40,7 +40,7 @@
                         <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="promo">Promo</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="#">Paket</a>
+                        <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="paket">Paket</a>
                     </li>
                 </ul>
                 <!-- right elements -->
@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -90,7 +90,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Daftar transaksi</p>
                     </div>
@@ -138,25 +138,25 @@
                         <div class="flex justify-between m-6">
                             <div class="flex">
                                 <a href="#">
-                                    <img src={{ URL::asset('/img/banner.jpg') }} alt="menu-detail" class="w-24 h-24 rounded-xl">
+                                    <img src={{ URL::asset('/img/nasgor/nasigorengtelur.jpg') }} alt="menu-detail" class="w-24 h-24 rounded-xl">
                                 </a>
                                 <div class="mx-3">
-                                    <p class="text-xl font-semibold">Nasi goreng ayam suwir</p>
+                                    <p class="text-xl font-semibold">Nasi goreng telor</p>
                                     <p class="text-lg font-medium text-slate-400">4 pesanan lainnya</p>
                                 </div>
                             </div>
                             <div class="max-w-sm border-l-2 border-slate-400 p-3">
                                 <p class="text-lg font-medium text-slate-300">Total pesanan</p>
-                                <p class="text-xl font-semibold">Rp100.000</p>
+                                <p class="text-xl font-semibold">Rp67.000</p>
                             </div>
 
                         </div>
                         <div class="max-w-full  flex justify-end m-4">
-                            <a href="#" class="flex items-center mx-3">
+                            <a href="detailtransaksi" class="flex items-center mx-3">
                                 <p class="text-lg font-semibold text-biru-kode">lihat detail transaksi</p>
                             </a>
                             <!-- button beli lagi -->
-                            <a href="#" class="bg-biru-kode rounded-md hover:bg-blue-800">
+                            <a href="menu" class="bg-biru-kode rounded-md hover:bg-blue-800">
                                 <button type="submit" class="mx-8 p-2 text-lg font-semibold text-white">Beli lagi</button>
                             </a>
                         </div>
@@ -176,25 +176,25 @@
                         <div class="flex justify-between m-6">
                             <div class="flex">
                                 <a href="#">
-                                    <img src={{ URL::asset('/img/banner.jpg') }} alt="menu-detail" class="w-24 h-24 rounded-xl">
+                                    <img src={{ URL::asset('/img/makanan/siomay.jpg') }} alt="menu-detail" class="w-24 h-24 rounded-xl">
                                 </a>
                                 <div class="mx-3">
-                                    <p class="text-xl font-semibold">Nasi goreng ayam suwir</p>
-                                    <p class="text-lg font-medium text-slate-400">4 pesanan lainnya</p>
+                                    <p class="text-xl font-semibold">Siomay</p>
+                                    <p class="text-lg font-medium text-slate-400">2 pesanan lainnya</p>
                                 </div>
                             </div>
                             <div class="max-w-sm border-l-2 border-slate-400 p-3">
                                 <p class="text-lg font-medium text-slate-300">Total pesanan</p>
-                                <p class="text-xl font-semibold">Rp100.000</p>
+                                <p class="text-xl font-semibold">Rp40.000</p>
                             </div>
 
                         </div>
                         <div class="max-w-full  flex justify-end m-4">
-                            <a href="#" class="flex items-center mx-3">
+                            <a href="detailtransaksi" class="flex items-center mx-3">
                                 <p class="text-lg font-semibold text-biru-kode">lihat detail transaksi</p>
                             </a>
                             <!-- button beli lagi -->
-                            <a href="#" class="bg-biru-kode rounded-md hover:bg-blue-800">
+                            <a href="menu" class="bg-biru-kode rounded-md hover:bg-blue-800">
                                 <button type="submit" class="mx-8 p-2 text-lg font-semibold text-white">Beli lagi</button>
                             </a>
                         </div>
@@ -214,25 +214,25 @@
                         <div class="flex justify-between m-6">
                             <div class="flex">
                                 <a href="#">
-                                    <img src={{ URL::asset('/img/banner.jpg') }} alt="menu-detail" class="w-24 h-24 rounded-xl">
+                                    <img src={{ URL::asset('/img/warmindo/indomiegorengjumbo.jpg') }} alt="menu-detail" class="w-24 h-24 rounded-xl">
                                 </a>
                                 <div class="mx-3">
-                                    <p class="text-xl font-semibold">Nasi goreng ayam suwir</p>
-                                    <p class="text-lg font-medium text-slate-400">4 pesanan lainnya</p>
+                                    <p class="text-xl font-semibold">Indomie goreng jumbo</p>
+                                    <p class="text-lg font-medium text-slate-400">3 pesanan lainnya</p>
                                 </div>
                             </div>
                             <div class="max-w-sm border-l-2 border-slate-400 p-3">
                                 <p class="text-lg font-medium text-slate-300">Total pesanan</p>
-                                <p class="text-xl font-semibold">Rp100.000</p>
+                                <p class="text-xl font-semibold">Rp30.000</p>
                             </div>
 
                         </div>
                         <div class="max-w-full  flex justify-end m-4">
-                            <a href="#" class="flex items-center mx-3">
+                            <a href="detailtransaksi" class="flex items-center mx-3">
                                 <p class="text-lg font-semibold text-biru-kode">lihat detail transaksi</p>
                             </a>
                             <!-- button beli lagi -->
-                            <a href="#" class="bg-biru-kode rounded-md hover:bg-blue-800">
+                            <a href="menu" class="bg-biru-kode rounded-md hover:bg-blue-800">
                                 <button type="submit" class="mx-8 p-2 text-lg font-semibold text-white">Beli lagi</button>
                             </a>
                         </div>

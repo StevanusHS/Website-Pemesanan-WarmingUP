@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -89,7 +89,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Bento</p>
                     </div>
@@ -103,13 +103,13 @@
                     <div class="flex">
                         <p class="font-semibold text-2xl mx-10 mb-3">Rekomendasi</p>
                     </div>
-                    <!-- card bento -->
+                    <!-- rekomendasi card bento -->
                     <div class="flex justify-center">
                         <div class="grid grid-cols-4 gap-5">
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bento1.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -118,10 +118,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 1</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -132,7 +132,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bento3.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -141,10 +141,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 3</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -155,7 +155,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bento9.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -164,10 +164,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 9</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp21.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -178,7 +178,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bentospecialbeef.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -187,10 +187,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento special beef</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp32.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -206,10 +206,10 @@
                     <!-- card bento -->
                     <div class="flex justify-center">
                         <div class="grid grid-cols-4 gap-5">
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bento1.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -218,10 +218,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 1</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -232,7 +232,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bento2.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -241,10 +241,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 2</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -255,7 +255,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bento3.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -264,10 +264,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 3</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -278,7 +278,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bento4.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -287,10 +287,264 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 4</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp18.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bento5.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento 5</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp19.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bento6.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento 6</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp21.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bento7.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento 7</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp21.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bento8.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento 8</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp21.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bento9.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento 9</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp21.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bento10.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento 10</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp24.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bento11.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento 11</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp23.500</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bento12.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento 12</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp27.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bentospecialchicken.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento spesial chicken</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp27.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bentocordonbleu.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento cordon bleu</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp33.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/bento/bentospecialbeef.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Bento special beef</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp32.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -300,6 +554,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </article>
         </section>
     </main>

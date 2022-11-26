@@ -40,7 +40,7 @@
                         <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="promo">Promo</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="#">Paket</a>
+                        <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="paket">Paket</a>
                     </li>
                 </ul>
                 <!-- right elements -->
@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -90,7 +90,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-300 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-300 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Detail transaksi</p>
                     </div>
@@ -109,7 +109,7 @@
                         <p class="text-lg font-medium">Metode pembayaran</p>
                         <div class="flex">
                             <a href="#" class=" mx-3">
-                                <img src={{ URL::asset('/img/banner.jpg') }} alt="logo-pembayaran" class="w-10  rounded-full object-cover">
+                                <img src={{ URL::asset('/img/icon/qris.jpg') }} alt="logo-pembayaran" class="w-8  rounded-full object-cover">
                             </a>
                             <p class="text-lg font-medium">Qris</p>
                         </div>
@@ -117,19 +117,19 @@
                     <div class="p-4 flex justify-between border-b-2 border-slate-300">
                         <p class="text-lg font-medium">Nama Kostumer</p>
                         <div class="flex">
-                            <p class="text-lg font-medium">Derryna</p>
+                            <p class="text-lg font-medium">Zaky</p>
                         </div>
                     </div>
                     <div class="p-4 flex justify-between border-b-2 border-slate-300">
                         <p class="text-lg font-medium">Menu</p>
                         <div class="flex">
-                            <p class="text-lg font-medium">Nasi goreng 1x</p>
+                            <p class="text-lg font-medium">Nasi goreng 3x</p>
                         </div>
                     </div>
                     <div class="p-4 flex justify-between border-b-2 border-slate-300">
                         <p class="text-lg font-medium">Waktu</p>
                         <div class="flex">
-                            <p class="text-lg font-medium">08:00pm</p>
+                            <p class="text-lg font-medium">08:00am</p>
                         </div>
                     </div>
                     <div class="p-4 flex justify-between border-b-2 border-slate-300">
@@ -141,7 +141,7 @@
                     <div class="p-4 flex justify-between border-b-2 border-slate-300">
                         <p class="text-lg font-medium">ID transaksi</p>
                         <div class="flex">
-                            <p class="text-lg font-medium">099999121928192....</p>
+                            <p class="text-lg font-medium">099999121928192</p>
                         </div>
                     </div>
                     <div class="p-4 flex justify-between border-b-2 border-slate-300">
@@ -153,14 +153,14 @@
                     <div class="p-4 my-5 flex justify-between">
                         <p class="text-lg font-medium">Jumlah</p>
                         <div class="flex">
-                            <p class="text-lg font-medium">Rp37.000</p>
+                            <p class="text-lg font-medium">Rp47.000</p>
                         </div>
                     </div>
                 </div>
             </article>
             <article>
                 <div class="w-full flex justify-center">
-                    <a href="#" class="bg-biru-kode rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-800">
+                    <a href="invoice" class="bg-biru-kode rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-800">
                         <button type="submit" class="p-3 text-xl text-white">Cetak bukti bayar</button>
                     </a>
                 </div>

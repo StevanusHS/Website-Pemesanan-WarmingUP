@@ -41,7 +41,7 @@ Route::get('/menu', function () {
 
 // rout ke menu wamrindo
 Route::get('/warmindo', function () {
-    return view('warmin');
+    return view('warmindo');
 });
 // route ke bento menu
 Route::get('/bento', function () {
@@ -51,6 +51,14 @@ Route::get('/bento', function () {
 Route::get('/nasgor', function () {
     return view('nasgor');
 });
+// route ke menu makan-makan
+Route::get('/makanmakan', function () {
+    return view('makanmakan');
+});
+// route ke menu bakar celup
+Route::get('/bakarcelup', function () {
+    return view('bakarcelup');
+});
 // route ke page camilan
 Route::get('/camilan', function () {
     return view('camilan');
@@ -59,9 +67,9 @@ Route::get('/camilan', function () {
 Route::get('/minuman', function () {
     return view('minuman');
 });
-// route ke kopi
-Route::get('/kopi', function () {
-    return view('kopi');
+// route ke toping
+Route::get('/toping', function () {
+    return view('toping');
 });
 
 // route ke daftar transaksi
@@ -135,4 +143,29 @@ Route::get('/detailtransaksi', function () {
 // route ke page paket
 Route::get('/paket', function () {
     return view('paket');
+});
+
+// route ke page semua menu promo
+Route::get('/semuapromo', function () {
+    return view('semuapromo');
+});
+
+// route ke page semua menu rekomendasi
+Route::get('/semuarekomendasi', function () {
+    return view('semuarekomendasi');
+});
+
+// route ke page semua menu paket sarapan
+Route::get('/semuapaketsarapan', function () {
+    return view('semuapaketsarapan');
+});
+
+// route ke page semua menu pmb
+Route::get('/semuapmb', function () {
+    return view('semuapmb');
+});
+
+// route ke page semua menu pn
+Route::get('/semuapn', function () {
+    return view('semuapn');
 });

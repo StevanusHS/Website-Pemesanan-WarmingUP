@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -89,7 +89,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="">
+                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Minuman</p>
                     </div>
@@ -104,13 +104,13 @@
                     <div class="flex">
                         <p class="font-semibold text-2xl mx-10 mb-3">Rekomendasi</p>
                     </div>
-                    <!-- card bento -->
+                    <!-- rekomendasi card minuman -->
                     <div class="flex justify-center">
                         <div class="grid grid-cols-4 gap-5">
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/teh.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -119,10 +119,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Es/Hot Teh</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp4.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -133,7 +133,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/kopisusuaren.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -142,10 +142,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Kopi susu aren (Hot/Es)</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp15.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -156,7 +156,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/mojito.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -165,10 +165,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Mojito (all variant)</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp8.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -179,7 +179,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/sekoteng.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -188,10 +188,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Sekoteng (Spesial)</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -202,15 +202,15 @@
                         </div>
                     </div>
                     <div class="flex">
-                        <p class="font-semibold text-2xl mx-10 mb-3 mt-3">Daftar menu bento</p>
+                        <p class="font-semibold text-2xl mx-10 mb-3 mt-3">Daftar menu minuman</p>
                     </div>
-                    <!-- card bento -->
+                    <!-- card minuman -->
                     <div class="flex justify-center">
                         <div class="grid grid-cols-4 gap-5">
-                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                        <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/robustacoco.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -219,7 +219,30 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Es robusta coco</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/kopisusu.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Kopi susu kekinian (Hot/Es)</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <p class="font-semibold px-3 text-sm">Rp16.000</p>
@@ -233,7 +256,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/kopisusuaren.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -242,10 +265,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Kopi susu aren (Hot/Es)</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp15.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -256,7 +279,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/gayolatte.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -265,10 +288,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Arabika gayo latte (Hot/Es)</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp15.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -279,7 +302,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/torajalatte.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -288,10 +311,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Toraja robusta latte (Hot/Es)</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp14.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -299,8 +322,401 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/freshmilkchoco.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Freshmilk Choco</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp14.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/coffegayo.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Arabika Gayo (Hot/Es)</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp13.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/torajarobusta.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Toraja Robusta (Hot/Es)</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp13.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/caddburry.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Es/Hot Cadburry</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp12.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/milo.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Es/Hot Milo</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp12.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/coklatpanas.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Es/Hot Coklat</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/melonlemonade.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Melon Lemonade</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp8.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/tehtarik.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Teh Tarik</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp8.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/thaimatcha.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Thai/Matcha Tea</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp8.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/mojito.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Mojito (all variant)</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp8.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/softdrink.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Soft drink</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp7.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/torabikacappucinno.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Torabika Cappucinno (Hot/Es)</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp7.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/jahehangat.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Jahe Hangat</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp6.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/kopigilusindocafe.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Kopi gilus/indocafe (Hot/Es)</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp5.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/nutrisari.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Nutrisari dingin</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp5.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/teh.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Es/Hot Teh</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp4.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
+                                <div class="relative">
+                                    <a href="#">
+                                        <img src={{ URL::asset('/img/minuman/sekoteng.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                    </a>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="py-2 flex flex-col justify-between bg-white h-40">
+                                    <div class="w-full h-auto bg-white ">
+                                        <a href="#">
+                                            <div class="flex justify-between">
+                                                <p class="font-normal px-3 text-20">Sekoteng (Spesial)</p>
+                                                <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                            <p class="font-semibold px-3 text-sm">Rp10.000</p>
+                                        </a>
+                                    </div>
+                                    <div class="w-full flex justify-end bg-white items-end">
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
+                </div>
             </article>
         </section>
     </main>

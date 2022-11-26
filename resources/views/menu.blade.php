@@ -11,7 +11,7 @@
 
 <body>
     <!-- navbar start -->
-   <nav class="fixed z-10 w-full flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
+    <nav class="fixed z-10 w-full flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
         <div class="container-fluid  w-full flex flex-wrap items-center justify-between px-6">
             <button class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -55,14 +55,14 @@
                     <!-- profile image dropdown -->
                     <div class="dropdown-relative">
                         <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
+                            <img src="/img/profile.jpg" class="rounded-full w-7 h-7" alt="" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1  m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
                             <li>
                                 <a href="profile" class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700">
                                     <div class=" flex items-center  rounded-lg shadow-md  w-48 pr-10 pl-2 py-3 ">
-                                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" alt="profile" class="rounded-full w-7 h-7">
-                                        <p class="text-md font-semibold mx-2">Derryna</p>
+                                        <img src="/img/profile.jpg" alt="profile" class="rounded-full w-7 h-7">
+                                        <p class="text-md font-semibold mx-2">Zaky</p>
                                     </div>
                                 </a>
                             </li>
@@ -90,7 +90,7 @@
         <section>
             <article>
                 <div class="relative">
-                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/banner.jpg') }} alt="banner">
+                    <img class="h-80 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="banner">
                     <div class="absolute top-0 left-0 flex h-full w-full justify-center">
                         <p class="my-auto text-5xl font-semibold text-white pt-11">Menu</p>
                     </div>
@@ -108,7 +108,7 @@
                     <div class="flex mx-5">
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="warmindo">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/warmindoLogo.jpg') }} alt="kateogri warmindo">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/icon/logowarmindo.jpg') }} alt="kategori warmindo">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Warmindo</p>
                                 </div>
@@ -116,7 +116,7 @@
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="bento">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/bentoLog.jpg') }} alt="kateogri bento">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/icon/logobento.jpg') }} alt="kategori bento">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Bento</p>
                                 </div>
@@ -124,33 +124,41 @@
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="nasgor">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/nasgorLogo.png') }} alt="kateogri">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/icon/logonasgor.jpg') }} alt="kategori nasgor">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Nasgor</p>
                                 </div>
                             </a>
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
-                            <a href="camilan">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/camilanLogo.png') }} alt="kateogri">
+                            <a href="makanmakan">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/icon/logomakanmakan.jpg') }} alt="kategori makan-makan">
                                 <div>
-                                    <p class="font-semibold text-20 text-center">Camilan</p>
+                                    <p class="font-semibold text-20 text-center">Makan-makan</p>
                                 </div>
                             </a>
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
                             <a href="minuman">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/minumanLogo.jpg') }} alt="kateogri">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/icon/logominuman.jpg') }} alt="kategori minuman">
                                 <div>
                                     <p class="font-semibold text-20 text-center">Minuman</p>
                                 </div>
                             </a>
                         </div>
                         <div class="max-w-max h-auto bg-transparanet">
-                            <a href="kopi">
-                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/kopiLogo.png') }} alt="kateogri">
+                            <a href="camilan">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/icon/logocamilan.jpg') }} alt="kategori camilan">
                                 <div>
-                                    <p class="font-semibold text-20 text-center">Kopi</p>
+                                    <p class="font-semibold text-20 text-center">Camilan</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="max-w-max h-auto bg-transparanet">
+                            <a href="toping">
+                                <img class="h-kategori w-kategori m-2 py-1 flex rounded-full shadow object-cover" src={{ URL::asset('/img/icon/logotoping.jpg') }} alt="kategori toping">
+                                <div>
+                                    <p class="font-semibold text-20 text-center">Toping</p>
                                 </div>
                             </a>
                         </div>
@@ -169,7 +177,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/makanan/siomay.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -178,10 +186,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Siomay</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -192,7 +200,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/nasgor/nasigorengtelur.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -201,10 +209,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Nasi goreng telor</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -215,7 +223,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bentospecialchicken.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -224,10 +232,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento special chicken</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp27.500</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -238,7 +246,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bentospecialbeef.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -247,10 +255,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento special beef</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp32.500</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -261,7 +269,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/warmindo/indomiedokdok.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -270,10 +278,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Mie dok dok</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp17.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -284,7 +292,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/bento/bento9.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -293,10 +301,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Bento 9 (Katsu ayam)</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp21.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -307,7 +315,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/kopisusuaren.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -316,10 +324,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Kopi Susu Aren</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp15.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -330,7 +338,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/nasgor.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/minuman/mojito.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -339,10 +347,10 @@
                                     <div class="w-full h-auto bg-white ">
                                         <a href="#">
                                             <div class="flex justify-between">
-                                                <p class="font-normal px-3 text-20">Nasi Bakar</p>
+                                                <p class="font-normal px-3 text-20">Mojito Aneka Rasa</p>
                                                 <a href="#" class="mx-5 my-1"><i class="fa-regular fa-heart"></i></a>
                                             </div>
-                                            <p class="font-semibold px-3 text-sm">Rp16.000</p>
+                                            <p class="font-semibold px-3 text-sm">Rp8.000</p>
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
@@ -355,8 +363,8 @@
             </article>
         </section>
     </main>
-     <!--footer-->
-     <footer class="w-full bg-footer ">
+    <!--footer-->
+    <footer class="w-full bg-footer ">
         <div class=" flex justify-between  m-5">
             <div class="max-w-sm m-3 flex flex-col text-white">
                 <p class="text-2xl font-semibold">Warming UP</p>
