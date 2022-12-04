@@ -21,16 +21,18 @@
             </button>
             <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
                 <a href="home" class="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 mt-2 lg:mt-2 mr-1">
-                    <p class="text-lg font-semibold">Warming Up</p>
+                    <p class="text-2xl font-semibold">Warming Up</p>
                 </a>
                 <!-- left links -->
-                <ul class="navbar-nav flex justify-end   pl-0 list-style-none mx-auto w-[900px]">
-                    <li class="nav-item p-2">
-                        <div class="flex">
-                            <input type="text" name="search-bar" id="search-bar" class="nav-link text-gray-500 hover:text-blue-500 focus:text-gray-900 p-0 w-[500px] shadow-md rounded-l-md focus: outline-blue-400 ring-1">
-                            <label for="search-bar" class="bg-slate-300 px-2  rounded-r-lg">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </label>
+                <ul class="navbar-nav flex justify-end   pl-0 list-style-none mx-auto w-[1300px]">
+                    <li class="nav-item p-0">
+                        <div class="relative text-gray-600 mr-10">
+                            <input type="search" name="search-bar" id="search-bar" placeholder="Cari" class="bg-gray-200 text-gray-500 hover:text-blue-500 focus:text-gray-900 p-5 h-10 w-[500px] shadow-md pr-10 rounded-full text-md focus:outline-blue-500" >
+                            <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                                <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                                </svg>
+                            </button>
                         </div>
                     </li>
                     <li class="nav-item p-2">
@@ -98,7 +100,7 @@
             </article>
             <!-- end judul -->
         </section>
-        <section class="max-w-6xl mx-auto border-x-2 border-b-2">
+        <section class="max-w-6xl mx-auto m-6 rounded-xl border-x-2 border-b-2">
             <!-- pesan antar -->
             <article>
                 <!-- logo image -->
@@ -109,7 +111,7 @@
                     </div>
                     <div class="my-auto w-full flex justify-end">
                         <a href="tipepesan">
-                            <button type="submit" class="text-xl bg-white p-3 rounded-xl text-biru-kode shadow-lg ring-2 hover:shadow-xl">Ganti</button>
+                            <button type="submit" class="text-lg bg-white p-3 rounded-xl text-biru-kode shadow-lg ring-2 hover:shadow-xl">Ganti</button>
                         </a>
                     </div>
                 </div>
@@ -119,14 +121,14 @@
                 <!-- alamat pengantaran -->
                 <div class="w-full flex flex-col h-auto p-5 bg-white border-b-2 border-gray-700">
                     <div>
-                        <p class="text-xl font-medium">Alamat pengantaran</p>
-                        <p class="text-lg">Jemi</p>
-                        <p class="text-lg">jln.bojongsoang Rt3/Rw4,Bandung,Jawa Barat,5343</p>
+                        <p class="text-lg font-medium">Alamat pengantaran</p>
+                        <p class="text-lg">Zaky</p>
+                        <p class="text-lg">Jln.bojongsoang Rt3/Rw4,Bandung,Jawa Barat,5343</p>
                         <p class="text-lg">Sebelah warung baraya</p>
                     </div>
                     <div class="w-full flex justify-end">
                         <a href="kostumalamat">
-                            <button type="submit" class="bg-blue-500 p-3 rounded-xl shadow-md font-semibold text-white hover:bg-blue-700">Ubah Alamat</button>
+                            <button type="submit" class="bg-blue-500 p-3 rounded-xl shadow-md font-medium text-lg text-white hover:bg-blue-700">Ubah Alamat</button>
                         </a>
                     </div>
                 </div>
@@ -137,15 +139,15 @@
                     <div class="max-w-full flex flex-col p-5 ">
                         <div class="flex justify-between items-center mx-4">
                             <a href="#">
-                                <img src={{ URL::asset('/img/makanan/siomay.jpg') }} alt="menu-detail" class="rounded-lg object-cover h-24 w-28 ">
+                                <img src={{ URL::asset('/img/makanan/siomay.jpg') }} alt="menu-detail" class="rounded-lg object-cover h-24 w-28">
                             </a>
                             <p class="text-xl font-semibold"> Siomay </p>
                             <p class="text-lg font-semibold"> 17.000 </p>
                             <p class="text-lg font-semibold"> 1x </p>
                         </div>
                         <!-- catatan -->
-                        <div class="m-5 max-w-5xl shadow-md flex">
-                            <input type="text" name="catatan" id="kostum-text" placeholder="tidak ada catatan" class="text-2xl w-full h-16 p-4 rounded-lg ring-2 ring-slate-300">
+                        <div class="m-5 max-w-7xl shadow-md flex">
+                            <input type="text" name="catatan" id="kostum-text" placeholder="tidak ada catatan" class="text-lg w-full h-16 p-4 rounded-lg ring-2 ring-slate-300">
                         </div>
                     </div>
                 </div>
@@ -163,8 +165,8 @@
                             <p class="text-lg font-semibold"> 2x </p>
                         </div>
                         <!-- catatan -->
-                        <div class="m-5 max-w-5xl shadow-md flex">
-                            <input type="text" name="catatan" id="kostum-text" placeholder="tidak ada catatan" value="Nasi gorengnya tidak pedas" class="text-2xl w-full h-16 p-4 rounded-lg ring-2 ring-slate-300">
+                        <div class="m-5 max-w-7xl shadow-md flex">
+                            <input type="text" name="catatan" id="kostum-text" placeholder="tidak ada catatan" value="Nasi gorengnya tidak pedas" class="text-lg w-full h-16 p-4 rounded-lg ring-2 ring-slate-300">
                         </div>
                     </div>
                 </div>
@@ -174,7 +176,7 @@
                 <div class="w-full h-auto p-5 bg-white border-b-2 border-black">
                     <div class="flex ring-2 ring-slate-200 p-3 rounded-xl bg-white shadow-md hover:shadow-lg">
                         <a href="promo">
-                            <img src={{ URL::asset('/img/icon/iconpromo.jpg') }} alt="klaim-promo" class="rounded-full w-24 h-20">
+                            <img src={{ URL::asset('/img/icon/iconpromo.jpg') }} alt="klaim-promo" class="rounded-full w-20 h-15">
                             <div class="flex items-center mx-5 w-full justify-between">
                                 <p class="text-xl font-semibold">Promo</p>
                                 <a href="promo" class="text-xl">
@@ -209,18 +211,10 @@
                                 <p class="text-xl font-medium">2.000</p>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between border-b-2 border-slate-300">
+                        <div class="flex items-center justify-between">
                             <p class=" mx-4 py-5 text-xl font-medium">Total pembayaran</p>
                             <div class="flex mx-3">
                                 <p class="text-xl font-medium">47.000</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <a href="detailtransaksi">
-                                <p class=" mx-4 py-10 text-xl font-medium text-biru-kode">Lihat detail belanja</p>
-                            </a>
-                            <div class="flex mx-3">
-                                <a href="detailtransaksi" class="text-xl font-medium mx-3"><i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -228,8 +222,8 @@
             </article>
             <article>
                 <div class="bg-white flex justify-center my-5">
-                    <a href="metodpembayaran" class="bg-biru-kode p-4 rounded-lg shadow-md hover:shadow-lg hover:bg-blue-800">
-                        <button type="submit" class="text-lg font-medium text-white">Konfirmasi</button>
+                    <a href="metodpembayaran" class="bg-biru-kode p-4 rounded-xl shadow-md hover:shadow-lg hover:bg-blue-800">
+                        <button type="submit" class="text-lg font-semibold text-white">Konfirmasi</button>
                     </a>
                 </div>
             </article>
@@ -240,7 +234,7 @@
         <div class=" flex justify-between  m-5">
             <div class="max-w-sm m-3 flex flex-col text-white">
                 <p class="text-2xl font-semibold">Warming UP</p>
-                <p class="text-lg font-light">Food and Bavarage</p>
+                <p class="text-lg font-light">Food and Beverage</p>
                 <a href="https://www.instagram.com/warmingupid/" target="_blank" class="text-lg">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -248,19 +242,19 @@
             <!-- link footer -->
             <div class="flex text-white">
                 <div class="max-w-sm  m-3">
-                    <p class="text-lg font-semibold uppercase">Useful Links</p>
+                    <p class="text-md font-semibold uppercase">Useful Links</p>
                     <a href="#" class="text-md font-medium">About US</a>
                 </div>
                 <div class="max-w-sm flex flex-col  m-3">
-                    <p class="text-lg font-semibold uppercase">PRIVACY POLICY</p>
+                    <p class="text-md font-semibold uppercase">PRIVACY POLICY</p>
                     <a href="#" class="text-md font-medium">Terms & Conditions</a>
                     <a href="#" class="text-md font-medium">Privacy</a>
                     <a href="#" class="text-md font-medium">Contact Us</a>
                 </div>
             </div>
         </div>
-        <div class="max-w-xl mx-auto border-t-2 border-white text-white">
-            <p class="text-center py-2">Copyright © 2021 created by Warming Up</p>
+        <div class="max-w-8xl mx-auto border-t-2 border-white text-white">
+            <p class="text-center py-2">Copyright © 2022 created by Warming Up</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>

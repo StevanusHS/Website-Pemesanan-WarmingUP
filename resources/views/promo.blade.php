@@ -11,7 +11,7 @@
 
 <body>
     <!-- navbar start -->
-    <nav class="fixed z-10 w-full flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
+    <nav class="fixed z-10 w-full top-0 flex flex-wrap items-center justify-between py-4 bg-white  shadow-lg navbar navbar-expand-lg navbar-light">
         <div class="container-fluid  w-full flex flex-wrap items-center justify-between px-6">
             <button class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -21,23 +21,25 @@
             </button>
             <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
                 <a href="home" class="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 mt-2 lg:mt-2 mr-1">
-                    <p class="text-lg font-semibold">Warming Up</p>
+                    <p class="text-2xl font-semibold">Warming Up</p>
                 </a>
                 <!-- left links -->
-                <ul class="navbar-nav flex justify-end   pl-0 list-style-none mx-auto w-[900px]">
-                    <li class="nav-item p-2">
-                        <div class="flex">
-                            <input type="text" name="search-bar" id="search-bar" class="nav-link text-gray-500 hover:text-blue-500 focus:text-gray-900 p-0 w-[500px] shadow-md rounded-l-md focus: outline-blue-400 ring-1">
-                            <label for="search-bar" class="bg-slate-300 px-2  rounded-r-lg">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </label>
+                <ul class="navbar-nav flex justify-end   pl-0 list-style-none mx-auto w-[1300px]">
+                    <li class="nav-item p-0">
+                        <div class="relative text-gray-600 mr-10">
+                            <input type="search" name="search-bar" id="search-bar" placeholder="Cari" class="bg-gray-200 text-gray-500 hover:text-blue-500 focus:text-gray-900 p-5 h-10 w-[500px] shadow-md pr-10 rounded-full text-md focus:outline-blue-500" >
+                            <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                                <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                                </svg>
+                            </button>
                         </div>
                     </li>
                     <li class="nav-item p-2">
                         <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="menu">Menu</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="promo">Promo</a>
+                        <a class="nav-link text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="promo">Promo</a>
                     </li>
                     <li class="nav-item p-2">
                         <a class="nav-link text-gray-900 hover:text-blue-500 focus:text-blue-500 text-md font-semibold p-0" href="paket">Paket</a>
@@ -87,31 +89,22 @@
     <!-- navbar end -->
     <main>
         <!-- judul -->
-        <section>
-            <article>
-                <div class="relative">
-                    <img class="h-300 w-full object-cover" src={{ URL::asset('/img/bannerpage.jpg') }} alt="">
-                    <div class="absolute top-0 left-0 flex h-full w-full justify-center">
-                        <p class="my-auto text-5xl font-semibold text-white pt-11">Promo</p>
-                    </div>
-                </div>
-            </article>
-            <!-- end judul -->
-        </section>
+        <div class=""></div>
+        <!-- end judul -->
         <section>
             <article>
                 <!-- judul promo voucher -->
-                <div class="w-full h-auto bg-transparent block">
+                <div class="w-full mt-28 h-auto bg-transparent block">
                     <div class="max-w-3xl mx-auto h-auto mt-10 bg-white">
                         <div class="flex items-center ">
-                            <a href="#" class="bg-slate-300 w-10 h-10 flex items-center px-3 rounded-full hover:shadow-md">
+                            <a href="transaksi" class="bg-slate-300 w-10 h-10 flex items-center px-3 rounded-full hover:shadow-md">
                                 <i class="fa-solid fa-arrow-left"></i>
                             </a>
                             <p class="font-semibold text-xl mx-3">Promo voucher makanan</p>
                         </div>
                         <div class="my-3 flex justify-between">
-                            <input type="text" name="apply-promo" id="apply-promo" placeholder="masukan kode promo" class=" border-2 border-slate-300 focus:outline-2 outline-blue-300 w-[500px] h-12 rounded-xl px-3 shadow-md">
-                            <button type="submit" class="bg-blue-500 p-3 px-10 rounded-xl text-white shadow-md font-semibold transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800">Terapkan</button>
+                            <input type="text" name="apply-promo" id="apply-promo" placeholder="masukan kode promo" class="text-lg border-2 border-slate-300 focus:outline-2 outline-blue-300 w-[600px] h-15 rounded-xl px-3 shadow-md">
+                            <button type="submit" class="bg-blue-500 p-3 px-10 w-[160px] rounded-xl text-lg text-white shadow-md font-semibold transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-blue-800">Terapkan</button>
                         </div>
                         <!-- card promo -->
                         <div class="grid grid-cols-2 gap-5">
@@ -120,12 +113,10 @@
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
                                     <div class="max-w-sm mx-3 pl-5 bg-white">
                                         <div class="flex justify-between">
-                                            <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
-                                            <a href="#" class="p-1 hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
+                                            <p class="text-lg">Khusus pembayaran <span class="font-semibold">Qris</span></p>
                                         </div>
                                         <div class="flex justify-between">
-                                            <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
-                                            <a href="#" class="p-1 hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
+                                            <p class="text-lg">Berakhir 11 jam lagi! <a href="detailvoucher" class="text-biru-kode">lihat detail</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -135,12 +126,10 @@
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
                                     <div class="max-w-sm mx-3 pl-5 bg-white">
                                         <div class="flex justify-between">
-                                            <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
-                                            <a href="#" class="p-1  hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
+                                            <p class="text-lg">Khusus pembayaran <span class="font-semibold">Qris</span></p>
                                         </div>
                                         <div class="flex justify-between">
-                                            <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
-                                            <a href="#" class="p-1  hover:text-blue-500"><i class="fa-solid fa-check"></i></a>
+                                            <p class="text-lg">Berakhir 11 jam lagi! <a href="detailvoucher" class="text-biru-kode">lihat detail</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -156,23 +145,10 @@
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
                                     <div class="max-w-sm mx-3 pl-5">
                                         <div class="flex justify-between">
-                                            <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
+                                            <p class="text-lg">Khusus pembayaran <span class="font-semibold">Qris</span></p>
                                         </div>
                                         <div class="flex justify-between">
-                                            <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-slate-300">
-                                <div class="flex flex-col justify-around">
-                                    <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
-                                    <div class="max-w-sm mx-3 pl-5 ">
-                                        <div class="flex justify-between">
-                                            <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
-                                        </div>
-                                        <div class="flex justify-between">
-                                            <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
+                                            <p class="text-lg">Berakhir 11 jam lagi! <a href="detailvoucher" class="text-biru-kode">lihat detail</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -182,10 +158,10 @@
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
                                     <div class="max-w-sm mx-3 pl-5 ">
                                         <div class="flex justify-between">
-                                            <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
+                                            <p class="text-lg">Khusus pembayaran <span class="font-semibold">Qris</span></p>
                                         </div>
                                         <div class="flex justify-between">
-                                            <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
+                                            <p class="text-lg">Berakhir 11 jam lagi! <a href="detailvoucher" class="text-biru-kode">lihat detail</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -195,10 +171,23 @@
                                     <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
                                     <div class="max-w-sm mx-3 pl-5 ">
                                         <div class="flex justify-between">
-                                            <p class="text-20">Khusus pembayaran <span class="font-semibold">Qris</span></p>
+                                            <p class="text-lg">Khusus pembayaran <span class="font-semibold">Qris</span></p>
                                         </div>
                                         <div class="flex justify-between">
-                                            <p class="text-20">Berakhir 11 jam lagi! <a href="#" class="text-biru-kode">lihat detail</a></p>
+                                            <p class="text-lg">Berakhir 11 jam lagi! <a href="detailvoucher" class="text-biru-kode">lihat detail</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="max-w-sm h-card-promo shadow-lg rounded-lg border bg-slate-300">
+                                <div class="flex flex-col justify-around">
+                                    <p class="font-bold m-4 text-20">Diskon 20%,maks.30rb</p>
+                                    <div class="max-w-sm mx-3 pl-5 ">
+                                        <div class="flex justify-between">
+                                            <p class="text-lg">Khusus pembayaran <span class="font-semibold">Qris</span></p>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <p class="text-lg">Berakhir 11 jam lagi! <a href="detailvoucher" class="text-biru-kode">lihat detail</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -215,7 +204,7 @@
         <div class=" flex justify-between  m-5">
             <div class="max-w-sm m-3 flex flex-col text-white">
                 <p class="text-2xl font-semibold">Warming UP</p>
-                <p class="text-lg font-light">Food and Bavarage</p>
+                <p class="text-lg font-light">Food and Beverage</p>
                 <a href="https://www.instagram.com/warmingupid/" target="_blank" class="text-lg">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -223,19 +212,19 @@
             <!-- link footer -->
             <div class="flex text-white">
                 <div class="max-w-sm  m-3">
-                    <p class="text-lg font-semibold uppercase">Useful Links</p>
+                    <p class="text-md font-semibold uppercase">Useful Links</p>
                     <a href="#" class="text-md font-medium">About US</a>
                 </div>
                 <div class="max-w-sm flex flex-col  m-3">
-                    <p class="text-lg font-semibold uppercase">PRIVACY POLICY</p>
+                    <p class="text-md font-semibold uppercase">PRIVACY POLICY</p>
                     <a href="#" class="text-md font-medium">Terms & Conditions</a>
                     <a href="#" class="text-md font-medium">Privacy</a>
                     <a href="#" class="text-md font-medium">Contact Us</a>
                 </div>
             </div>
         </div>
-        <div class="max-w-xl mx-auto border-t-2 border-white text-white">
-            <p class="text-center py-2">Copyright © 2021 created by Warming Up</p>
+        <div class="max-w-8xl mx-auto border-t-2 border-white text-white">
+            <p class="text-center py-2">Copyright © 2022 created by Warming Up</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>

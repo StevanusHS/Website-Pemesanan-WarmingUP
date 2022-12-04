@@ -21,16 +21,18 @@
             </button>
             <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
                 <a href="home" class="flex items-center text-gray-900 hover:text-gray-900 focus:text-gray-900 mt-2 lg:mt-2 mr-1">
-                    <p class="text-lg font-semibold">Warming Up</p>
+                    <p class="text-2xl font-semibold">Warming Up</p>
                 </a>
                 <!-- left links -->
-                <ul class="navbar-nav flex justify-end   pl-0 list-style-none mx-auto w-[900px]">
-                    <li class="nav-item p-2">
-                        <div class="flex">
-                            <input type="text" name="search-bar" id="search-bar" class="nav-link text-gray-500 hover:text-blue-500 focus:text-gray-900 p-0 w-[500px] shadow-md rounded-l-md focus: outline-blue-400 ring-1">
-                            <label for="search-bar" class="bg-slate-300 px-2  rounded-r-lg">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </label>
+                <ul class="navbar-nav flex justify-end   pl-0 list-style-none mx-auto w-[1300px]">
+                    <li class="nav-item p-0">
+                        <div class="relative text-gray-600 mr-10">
+                            <input type="search" name="search-bar" id="search-bar" placeholder="Cari" class="bg-gray-200 text-gray-500 hover:text-blue-500 focus:text-gray-900 p-5 h-10 w-[500px] shadow-md pr-10 rounded-full text-md focus:outline-blue-500" >
+                            <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                                <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                                </svg>
+                            </button>
                         </div>
                     </li>
                     <li class="nav-item p-2">
@@ -110,7 +112,7 @@
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/basohalus.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/basohalus.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -126,14 +128,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/telorceplok.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/telorceplok.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -149,14 +151,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/kornet.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/kornet.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -172,14 +174,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/sosis.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/sosis.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -195,7 +197,7 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
@@ -210,7 +212,7 @@
                         <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/sosis.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/sosis.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -226,14 +228,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/basohalus.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/basohalus.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -249,14 +251,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/basourat.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/basourat.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -272,14 +274,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/telorceplok.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/telorceplok.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -295,14 +297,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/nasiputih.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/nasiputih.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -318,14 +320,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/kornet.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/kornet.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -341,14 +343,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/keju.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/keju.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -364,14 +366,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/siomaykeringbulat.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/siomaykeringbulat.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -387,14 +389,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/siomaykeringkuncup.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/siomaykeringkuncup.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -410,14 +412,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/siomaykeringsegitiga.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/siomaykeringsegitiga.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -433,14 +435,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/batagorkering.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/batagorkering.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -456,14 +458,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/shrimproll.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/shrimproll.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -479,14 +481,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/toriball.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/toriball.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -502,14 +504,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/ekado.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/ekado.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -525,14 +527,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/chickenkatsu.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/chickenkatsu.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -548,14 +550,14 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="w-200 h-300 bg-white rounded-lg border border-gray-200 shadow-md">
                                 <div class="relative">
                                     <a href="#">
-                                        <img src={{ URL::asset('/img/toping/katsutenggiri.jpg') }} alt="card-food" class="rounded-t-lg h-[125px] bg-cover">
+                                        <img src={{ URL::asset('/img/toping/katsutenggiri.jpg') }} alt="card-food" class="rounded-t-lg h-[135px] bg-cover">
                                     </a>
                                 </div>
                                 <div>
@@ -571,7 +573,7 @@
                                         </a>
                                     </div>
                                     <div class="w-full flex justify-end bg-white items-end">
-                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-2">tambah</button>
+                                        <button type="submit" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 text-center mr-3">tambah</button>
                                     </div>
                                 </div>
                             </div>
@@ -586,7 +588,7 @@
         <div class=" flex justify-between  m-5">
             <div class="max-w-sm m-3 flex flex-col text-white">
                 <p class="text-2xl font-semibold">Warming UP</p>
-                <p class="text-lg font-light">Food and Bavarage</p>
+                <p class="text-lg font-light">Food and Beverage</p>
                 <a href="https://www.instagram.com/warmingupid/" target="_blank" class="text-lg">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -594,19 +596,19 @@
             <!-- link footer -->
             <div class="flex text-white">
                 <div class="max-w-sm  m-3">
-                    <p class="text-lg font-semibold uppercase">Useful Links</p>
+                    <p class="text-md font-semibold uppercase">Useful Links</p>
                     <a href="#" class="text-md font-medium">About US</a>
                 </div>
                 <div class="max-w-sm flex flex-col  m-3">
-                    <p class="text-lg font-semibold uppercase">PRIVACY POLICY</p>
+                    <p class="text-md font-semibold uppercase">PRIVACY POLICY</p>
                     <a href="#" class="text-md font-medium">Terms & Conditions</a>
                     <a href="#" class="text-md font-medium">Privacy</a>
                     <a href="#" class="text-md font-medium">Contact Us</a>
                 </div>
             </div>
         </div>
-        <div class="max-w-xl mx-auto border-t-2 border-white text-white">
-            <p class="text-center py-2">Copyright © 2021 created by Warming Up</p>
+        <div class="max-w-8xl mx-auto border-t-2 border-white text-white">
+            <p class="text-center py-2">Copyright © 2022 created by Warming Up</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
